@@ -1,6 +1,8 @@
 name: Lint Frontend
 
 on:
+  # Called by varde-image.yml so an image is only published from a tested commit.
+  workflow_call:
   push:
     branches:
       - master
@@ -14,7 +16,9 @@ on:
       - .github/workflows/lint-frontend.yml
 
 concurrency:
-  group: ${{ github.workflow }}-${{ github.ref }}
+  # Prefix plus workflow: called from varde-image.yml, github.workflow is the caller's name,
+  # so standalone and called runs stay in separate groups.
+  group: lint-frontend-${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
 
 permissions:

@@ -1,0 +1,93 @@
+name: Varde image
+
+# Tests every commit on main and every version tag, then publishes the image to
+# ghcr.io/<owner>/<repo>. Only amd64 is built: that is what the server runs.
+#
+# Tags:
+#   push to main  -> :latest, :sha-<short sha>
+#   tag vX.Y.Z    -> :vX.Y.Z, :latest
+#   manual run    -> :dev-<short sha>
+
+on:
+  push:
+    branches:
+      - main
+    tags:
+      - "v*"
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+  packages: write
+
+jobs:
+  backend-tests:
+    uses: ./.github/workflows/test-backend.yml
+
+  backend-lint:
+    uses: ./.github/workflows/lint-backend.yml
+
+  frontend:
+    uses: ./.github/workflows/lint-frontend.yml
+
+  image:
+    name: Build and publish image (amd64)
+    needs: [backend-tests, backend-lint, frontend]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 1
+
+      - name: Work out image name and tags
+        id: tags
+        env:
+          REPOSITORY: ${{ github.repository }}
+          EVENT: ${{ github.event_name }}
+          REF_TYPE: ${{ github.ref_type }}
+          REF_NAME: ${{ github.ref_name }}
+          SHA: ${{ github.sha }}
+        run: |
+          set -eu
+          image="ghcr.io/$(echo "$REPOSITORY" | tr '[:upper:]' '[:lower:]')"
+          short="${SHA::7}"
+          if [ "$EVENT" = "workflow_dispatch" ]; then
+            tags="$image:dev-$short"
+          elif [ "$REF_TYPE" = "tag" ]; then
+            tags="$image:$REF_NAME $image:latest"
+          else
+            tags="$image:latest $image:sha-$short"
+          fi
+          echo "image=$image" >> "$GITHUB_OUTPUT"
+          echo "tags=$tags" >> "$GITHUB_OUTPUT"
+          echo "Publishing: $tags"
+
+      - name: Log in to GitHub Container Registry
+        env:
+          REGISTRY_PASSWORD: ${{ secrets.GITHUB_TOKEN }}
+          ACTOR: ${{ github.actor }}
+        run: echo "${REGISTRY_PASSWORD}" | docker login --username "${ACTOR}" --password-stdin ghcr.io
+
+      - name: Build and push
+        env:
+          TAGS: ${{ steps.tags.outputs.tags }}
+          VERSION: ${{ github.ref_type == 'tag' && github.ref_name || format('sha-{0}', github.sha) }}
+        run: |
+          set -eu
+          tag_args=""
+          for tag in $TAGS; do tag_args="$tag_args --tag $tag"; done
+          # shellcheck disable=SC2086
+          docker buildx build \
+            --platform linux/amd64 \
+            --file docker/Dockerfile \
+            --label "org.opencontainers.image.source=https://github.com/${{ github.repository }}" \
+            --label "org.opencontainers.image.version=${VERSION}" \
+            --label "org.opencontainers.image.licenses=AGPL-3.0-or-later" \
+            $tag_args \
+            --push \
+            .
