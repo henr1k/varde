@@ -792,6 +792,170 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/api/v1/coach": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        /**
+         * Read Dashboard
+         * @description Return today's guidance, the two-week plan with what was done, charts data and settings.
+         */
+        get: operations["read_dashboard_api_v1_coach_get"];
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/v1/coach/api-key": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        /**
+         * Save Api Key
+         * @description Save your own API key for your model provider. It is stored encrypted and never returned.
+         */
+        put: operations["save_api_key_api_v1_coach_api_key_put"];
+        post?: never;
+        /**
+         * Delete Api Key
+         * @description Remove your own API key (the server key, if any, is used again).
+         */
+        delete: operations["delete_api_key_api_v1_coach_api_key_delete"];
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/v1/coach/checkins": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        /**
+         * Create Checkin
+         * @description Send the coach a note; the plan is reworked shortly.
+         */
+        post: operations["create_checkin_api_v1_coach_checkins_post"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/v1/coach/context": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        /**
+         * Read Context
+         * @description Return exactly what the coach saw on its latest update.
+         */
+        get: operations["read_context_api_v1_coach_context_get"];
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/v1/coach/model/test": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        /**
+         * Check Model
+         * @description Check your model settings against the provider without generating a plan.
+         */
+        post: operations["check_model_api_v1_coach_model_test_post"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/v1/coach/profile": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        /**
+         * Update Profile
+         * @description Save coach settings; a new plan follows shortly.
+         */
+        put: operations["update_profile_api_v1_coach_profile_put"];
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/v1/coach/races": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        /**
+         * Replace Races
+         * @description Replace the race calendar; a new plan follows shortly.
+         */
+        put: operations["replace_races_api_v1_coach_races_put"];
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/v1/coach/refresh": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        /**
+         * Request Refresh
+         * @description Ask for a new update now; it runs on the next scheduler pass.
+         */
+        post: operations["request_refresh_api_v1_coach_refresh_post"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
     "/api/v1/followers/follow-requests": {
         parameters: {
             query?: never;
@@ -5836,6 +6000,558 @@ export interface components {
          */
         BristolType: 1 | 2 | 3 | 4 | 5 | 6 | 7;
         /**
+         * CoachApiKeyUpdate
+         * @description A user's own API key for their model provider.
+         */
+        CoachApiKeyUpdate: {
+            /** Api Key */
+            api_key: string;
+        };
+        /**
+         * CoachCheckinCreate
+         * @description A new check-in.
+         */
+        CoachCheckinCreate: {
+            /** Text */
+            text: string;
+        };
+        /**
+         * CoachCheckinRead
+         * @description A stored check-in.
+         */
+        CoachCheckinRead: {
+            /**
+             * Created At
+             * Format: date-time
+             */
+            created_at: string;
+            /** Id */
+            id: number;
+            /** Text */
+            text: string;
+        };
+        /**
+         * CoachConnectionTest
+         * @description Result of a connection test against the user's model provider.
+         */
+        CoachConnectionTest: {
+            /** Detail */
+            detail: string;
+            /** Ok */
+            ok: boolean;
+        };
+        /**
+         * CoachDashboard
+         * @description Everything the coach page shows.
+         */
+        CoachDashboard: {
+            /** Checkins */
+            checkins: components["schemas"]["CoachCheckinRead"][];
+            /** Configured */
+            configured: boolean;
+            /** Days */
+            days: components["schemas"]["CoachPlanDayRead"][];
+            latest_attempt: components["schemas"]["CoachReportRead"] | null;
+            /** Load */
+            load: components["schemas"]["CoachLoadPoint"][];
+            model_status?: components["schemas"]["CoachModelStatus"] | null;
+            profile: components["schemas"]["CoachProfileRead"] | null;
+            /** Races */
+            races: components["schemas"]["CoachRaceRead"][];
+            report: components["schemas"]["CoachReportRead"] | null;
+            /** Weeks */
+            weeks: components["schemas"]["CoachWeekSummary"][];
+        };
+        /**
+         * CoachGoalProgress
+         * @description Progress toward one goal or race.
+         */
+        CoachGoalProgress: {
+            /**
+             * On Track
+             * @enum {string}
+             */
+            on_track: "ahead" | "on_track" | "at_risk" | "off_track" | "unknown";
+            /**
+             * Predicted
+             * @description Realistic finish-time estimate with range, or ''
+             */
+            predicted: string;
+            /**
+             * Race
+             * @description The race name exactly as in the context, or 'general fitness'
+             */
+            race: string;
+            /**
+             * Summary
+             * @description 2-4 sentences on progress and what decides it from here
+             */
+            summary: string;
+        };
+        /**
+         * CoachInnerRepeat
+         * @description A repeat nested inside another repeat, e.g. the 4 x 400 m in 3 x (4 x 400 m).
+         */
+        CoachInnerRepeat: {
+            /** Count */
+            count: number;
+            kind: components["schemas"]["CoachRepeatKind"];
+            /** Steps */
+            steps: components["schemas"]["CoachWorkoutStep"][];
+        };
+        /**
+         * CoachLoadPoint
+         * @description Fitness, fatigue and form for one day.
+         */
+        CoachLoadPoint: {
+            /** Atl */
+            atl: number;
+            /** Ctl */
+            ctl: number;
+            /**
+             * Date
+             * Format: date
+             */
+            date: string;
+            /** Load */
+            load: number;
+            /** Tsb */
+            tsb: number;
+        };
+        /**
+         * CoachModelStatus
+         * @description Which model the coach will use for this user, and whether it can run.
+         */
+        CoachModelStatus: {
+            /** Detail */
+            detail: string;
+            /**
+             * Key Source
+             * @enum {string}
+             */
+            key_source: "own" | "server" | "none";
+            /** Model */
+            model: string | null;
+            provider: components["schemas"]["LlmProvider"];
+            /** Usable */
+            usable: boolean;
+        };
+        /**
+         * CoachPlanDayRead
+         * @description One calendar day: what was planned and what was done.
+         */
+        CoachPlanDayRead: {
+            /**
+             * Date
+             * Format: date
+             */
+            date: string;
+            /** Done Km */
+            done_km: number;
+            /** Done Minutes */
+            done_minutes: number;
+            /** Done Names */
+            done_names: string[];
+            /** Status */
+            status: ("done" | "partial" | "over" | "missed" | "rest" | "extra" | "pending") | null;
+            workout: components["schemas"]["CoachWorkout"] | null;
+        };
+        /**
+         * CoachProfileRead
+         * @description Coach settings as stored. The API key itself is never returned, only whether one is saved.
+         */
+        CoachProfileRead: {
+            /** Available Days */
+            available_days?: ("Mon" | "Tue" | "Wed" | "Thu" | "Fri" | "Sat" | "Sun")[];
+            /** Coach Notes */
+            coach_notes?: string | null;
+            /** Constraints */
+            constraints?: string | null;
+            /** Enabled */
+            enabled: boolean;
+            /** Experience */
+            experience?: string | null;
+            /** Health */
+            health?: string | null;
+            /** Language */
+            language?: string | null;
+            /** Llm Api Key Hint */
+            llm_api_key_hint?: string | null;
+            /** Llm Base Url */
+            llm_base_url?: string | null;
+            /** Llm Effort */
+            llm_effort?: ("low" | "medium" | "high" | "xhigh" | "max") | null;
+            /** Llm Model */
+            llm_model?: string | null;
+            llm_provider?: components["schemas"]["LlmProvider"] | null;
+            /** Long Run Day */
+            long_run_day?: ("Mon" | "Tue" | "Wed" | "Thu" | "Fri" | "Sat" | "Sun") | null;
+            /** Max Hr */
+            max_hr?: number | null;
+            /** Max Weekly Hours */
+            max_weekly_hours?: number | null;
+            /** Preferences */
+            preferences?: string | null;
+            /** Primary Goal */
+            primary_goal?: string | null;
+            /** Rest Hr */
+            rest_hr?: number | null;
+            /** Threshold Pace S Per Km */
+            threshold_pace_s_per_km?: number | null;
+            /** Update Due At */
+            update_due_at?: string | null;
+            /** Update Trigger */
+            update_trigger?: string | null;
+            /** User Id */
+            user_id: number;
+        };
+        /**
+         * CoachProfileUpdate
+         * @description Editable coach settings.
+         */
+        CoachProfileUpdate: {
+            /** Available Days */
+            available_days?: ("Mon" | "Tue" | "Wed" | "Thu" | "Fri" | "Sat" | "Sun")[];
+            /** Constraints */
+            constraints?: string | null;
+            /** Enabled */
+            enabled: boolean;
+            /** Experience */
+            experience?: string | null;
+            /** Health */
+            health?: string | null;
+            /** Language */
+            language?: string | null;
+            /** Llm Base Url */
+            llm_base_url?: string | null;
+            /** Llm Effort */
+            llm_effort?: ("low" | "medium" | "high" | "xhigh" | "max") | null;
+            /** Llm Model */
+            llm_model?: string | null;
+            llm_provider?: components["schemas"]["LlmProvider"] | null;
+            /** Long Run Day */
+            long_run_day?: ("Mon" | "Tue" | "Wed" | "Thu" | "Fri" | "Sat" | "Sun") | null;
+            /** Max Hr */
+            max_hr?: number | null;
+            /** Max Weekly Hours */
+            max_weekly_hours?: number | null;
+            /** Preferences */
+            preferences?: string | null;
+            /** Primary Goal */
+            primary_goal?: string | null;
+            /** Rest Hr */
+            rest_hr?: number | null;
+            /** Threshold Pace S Per Km */
+            threshold_pace_s_per_km?: number | null;
+        };
+        /**
+         * CoachRaceRead
+         * @description A stored race.
+         */
+        CoachRaceRead: {
+            /** Distance Km */
+            distance_km?: number | null;
+            /** Id */
+            id: number;
+            /** Name */
+            name: string;
+            /** Notes */
+            notes?: string | null;
+            /** @default A */
+            priority: components["schemas"]["RacePriority"];
+            /**
+             * Race Date
+             * Format: date
+             */
+            race_date: string;
+            /** Target Time */
+            target_time?: string | null;
+        };
+        /**
+         * CoachRaceWrite
+         * @description One race as submitted.
+         */
+        CoachRaceWrite: {
+            /** Distance Km */
+            distance_km?: number | null;
+            /** Name */
+            name: string;
+            /** Notes */
+            notes?: string | null;
+            /** @default A */
+            priority: components["schemas"]["RacePriority"];
+            /**
+             * Race Date
+             * Format: date
+             */
+            race_date: string;
+            /** Target Time */
+            target_time?: string | null;
+        };
+        /**
+         * CoachReadiness
+         * @description How the athlete is likely doing today.
+         */
+        CoachReadiness: {
+            /**
+             * Note
+             * @description One or two sentences on why
+             */
+            note: string;
+            /**
+             * Status
+             * @enum {string}
+             */
+            status: "fresh" | "ready" | "tired" | "overreached" | "returning";
+        };
+        /**
+         * CoachRefreshAccepted
+         * @description Acknowledgement that an update was requested.
+         */
+        CoachRefreshAccepted: {
+            /** Detail */
+            detail: string;
+        };
+        /**
+         * CoachRepeat
+         * @description A block of steps repeated ``count`` times.
+         */
+        CoachRepeat: {
+            /** Count */
+            count: number;
+            kind: components["schemas"]["CoachRepeatKind"];
+            /** Steps */
+            steps: (components["schemas"]["CoachWorkoutStep"] | components["schemas"]["CoachInnerRepeat"])[];
+        };
+        /**
+         * CoachRepeatKind
+         * @description Marks a repeat block. An enum (not a Literal) so the marker survives the API schema conversion.
+         * @enum {string}
+         */
+        CoachRepeatKind: "repeat";
+        /**
+         * CoachReportOutput
+         * @description The structured report the model returns on every update.
+         */
+        CoachReportOutput: {
+            /**
+             * Coach Notes
+             * @description Updated long-term notes about the athlete, rewritten in full, max ~250 words
+             */
+            coach_notes: string;
+            /**
+             * Flags
+             * @description Warnings worth attention; empty if none
+             */
+            flags: string[];
+            /** Goal Progress */
+            goal_progress: components["schemas"]["CoachGoalProgress"][];
+            /**
+             * Headline
+             * @description One line to the athlete for today, max ~15 words
+             */
+            headline: string;
+            /**
+             * Phase
+             * @description Current training phase, max ~12 words
+             */
+            phase: string;
+            /**
+             * Plan
+             * @description Exactly one entry per day from today through today+13
+             */
+            plan: components["schemas"]["CoachWorkout"][];
+            /**
+             * Plan Changes
+             * @description What changed versus the previous plan and why; '' if first plan
+             */
+            plan_changes: string;
+            readiness: components["schemas"]["CoachReadiness"];
+            /**
+             * Recent Assessment
+             * @description Read of the last 1-3 weeks; 1-3 short paragraphs, plain text
+             */
+            recent_assessment: string;
+            /**
+             * Tips
+             * @description 0-3 short practical tips
+             */
+            tips: string[];
+            /**
+             * Today Summary
+             * @description 2-4 sentences: what to do today and how it should feel
+             */
+            today_summary: string;
+            /**
+             * Week Focus
+             * @description Focus of this week in one or two sentences
+             */
+            week_focus: string;
+        };
+        /**
+         * CoachReportRead
+         * @description A coach update as shown to the athlete (without the full context pack).
+         */
+        CoachReportRead: {
+            /**
+             * Created At
+             * Format: date-time
+             */
+            created_at: string;
+            /** Error */
+            error?: string | null;
+            /** Id */
+            id: number;
+            /** Model */
+            model: string;
+            report?: components["schemas"]["CoachReportOutput"] | null;
+            status: components["schemas"]["ReportStatus"];
+            /** Trigger */
+            trigger: string;
+            /** Validation Issues */
+            validation_issues?: string[] | null;
+        };
+        /**
+         * CoachWeekSummary
+         * @description Running totals for one week.
+         */
+        CoachWeekSummary: {
+            /** Load */
+            load: number;
+            /** Long Km */
+            long_km: number;
+            /** Planned Km */
+            planned_km?: number | null;
+            /** Run Hours */
+            run_hours: number;
+            /** Run Km */
+            run_km: number;
+            /** Runs */
+            runs: number;
+            /**
+             * Week
+             * Format: date
+             */
+            week: string;
+        };
+        /**
+         * CoachWorkout
+         * @description One planned day.
+         */
+        CoachWorkout: {
+            /**
+             * Date
+             * @description YYYY-MM-DD
+             */
+            date: string;
+            /**
+             * Distance Km
+             * @description Planned running distance, null for rest/strength/cross
+             */
+            distance_km: number | null;
+            /**
+             * Duration Min
+             * @description Planned total duration in minutes, null for rest
+             */
+            duration_min: number | null;
+            /**
+             * Key
+             * @description True for the 1-3 sessions per week that matter most
+             */
+            key: boolean;
+            /**
+             * Purpose
+             * @description One sentence: why this session, here in the week
+             */
+            purpose: string;
+            /**
+             * Sport
+             * @enum {string}
+             */
+            sport: "run" | "strength" | "cross" | "rest";
+            /**
+             * Steps
+             * @description Device-neutral steps; empty only for rest days
+             */
+            steps: (components["schemas"]["CoachWorkoutStep"] | components["schemas"]["CoachRepeat"])[];
+            /**
+             * Structure
+             * @description Warm-up, main set, cool-down in words. '' for rest
+             */
+            structure: string;
+            /**
+             * Target
+             * @description Pace/HR targets in words, e.g. '5:20-5:40/km, HR < 150'. '' for rest
+             */
+            target: string;
+            /**
+             * Title
+             * @description Short name, e.g. '6 x 1 km @ threshold'
+             */
+            title: string;
+            /**
+             * Type
+             * @enum {string}
+             */
+            type: "easy" | "recovery" | "long" | "tempo" | "threshold" | "intervals" | "hills" | "progression" | "fartlek" | "strides" | "race" | "rest" | "cross" | "strength";
+        };
+        /**
+         * CoachWorkoutStep
+         * @description One step of a workout.
+         *
+         *     Attributes:
+         *         kind: warmup, active, recovery, rest or cooldown.
+         *         duration_type: ``time`` (seconds), ``distance`` (meters) or ``open`` (until lap press).
+         *         duration_value: Seconds or meters; null only when ``duration_type`` is ``open``.
+         *         target_type: pace, hr, hr_zone, rpe or none.
+         *         target_low: Lower bound: pace in s/km (faster end), bpm, or RPE 1-10. Null for none.
+         *         target_high: Upper bound: pace in s/km (slower end), bpm, or RPE 1-10. Null for none.
+         *         zone: Heart-rate zone number for ``hr_zone`` (bounds still given in bpm).
+         *         note: Short cue shown on the device.
+         */
+        CoachWorkoutStep: {
+            /**
+             * Duration Type
+             * @enum {string}
+             */
+            duration_type: "time" | "distance" | "open";
+            /**
+             * Duration Value
+             * @description Seconds for time, meters for distance, null for open
+             */
+            duration_value: number | null;
+            /**
+             * Kind
+             * @enum {string}
+             */
+            kind: "warmup" | "active" | "recovery" | "rest" | "cooldown";
+            /**
+             * Note
+             * @description Short cue for the watch, '' if none
+             */
+            note: string;
+            /**
+             * Target High
+             * @description pace: slowest s/km; hr/hr_zone: max bpm; rpe: max. null for none
+             */
+            target_high: number | null;
+            /**
+             * Target Low
+             * @description pace: fastest s/km; hr/hr_zone: min bpm; rpe: min. null for none
+             */
+            target_low: number | null;
+            /**
+             * Target Type
+             * @enum {string}
+             */
+            target_type: "pace" | "hr" | "hr_zone" | "rpe" | "none";
+            /**
+             * Zone
+             * @description HR zone number when target_type is hr_zone, else null
+             */
+            zone: number | null;
+        };
+        /**
          * Color
          * @description Enumeration of common stool color descriptions.
          *
@@ -8884,6 +9600,16 @@ export interface components {
             type_breakdown?: components["schemas"]["TypeBreakdownItem"][] | null;
         };
         /**
+         * LlmProvider
+         * @description Where the coach's model runs.
+         *
+         *     ``anthropic`` uses the official Anthropic SDK. ``openai_compatible`` covers any server that
+         *     speaks the OpenAI chat-completions protocol: OpenAI, OpenRouter, Mistral, Groq, Gemini's
+         *     compatibility endpoint, and local servers such as Ollama or LM Studio.
+         * @enum {string}
+         */
+        LlmProvider: "anthropic" | "openai_compatible";
+        /**
          * LogoutResponse
          * @description Response payload returned by the logout endpoint.
          *
@@ -9512,6 +10238,12 @@ export interface components {
             username?: string | null;
         };
         /**
+         * RacePriority
+         * @description A = the race the season is built around, B = important, C = training race.
+         * @enum {string}
+         */
+        RacePriority: "A" | "B" | "C";
+        /**
          * RelationshipRead
          * @description The authenticated user's relationship with another user, both directions.
          *
@@ -9523,6 +10255,12 @@ export interface components {
             incoming?: components["schemas"]["FollowRelationshipRead"] | null;
             outgoing?: components["schemas"]["FollowRelationshipRead"] | null;
         };
+        /**
+         * ReportStatus
+         * @description Lifecycle of one coach update.
+         * @enum {string}
+         */
+        ReportStatus: "running" | "ok" | "error";
         /**
          * ServerSettingsEdit
          * @description Edit schema for server settings updates.
@@ -13304,6 +14042,317 @@ export interface operations {
                 };
                 content: {
                     "application/json": components["schemas"]["TokenResponseWeb"] | components["schemas"]["TokenResponseMobile"];
+                };
+            };
+            /** @description Unexpected error */
+            default: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/problem+json": components["schemas"]["ProblemDetail"];
+                };
+            };
+        };
+    };
+    read_dashboard_api_v1_coach_get: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody?: never;
+        responses: {
+            /** @description Successful Response */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["CoachDashboard"];
+                };
+            };
+            /** @description Unexpected error */
+            default: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/problem+json": components["schemas"]["ProblemDetail"];
+                };
+            };
+        };
+    };
+    save_api_key_api_v1_coach_api_key_put: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": components["schemas"]["CoachApiKeyUpdate"];
+            };
+        };
+        responses: {
+            /** @description Successful Response */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["CoachProfileRead"];
+                };
+            };
+            /** @description Validation Error */
+            422: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/problem+json": components["schemas"]["ProblemDetail"];
+                };
+            };
+            /** @description Unexpected error */
+            default: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/problem+json": components["schemas"]["ProblemDetail"];
+                };
+            };
+        };
+    };
+    delete_api_key_api_v1_coach_api_key_delete: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody?: never;
+        responses: {
+            /** @description Successful Response */
+            204: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content?: never;
+            };
+            /** @description Unexpected error */
+            default: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/problem+json": components["schemas"]["ProblemDetail"];
+                };
+            };
+        };
+    };
+    create_checkin_api_v1_coach_checkins_post: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": components["schemas"]["CoachCheckinCreate"];
+            };
+        };
+        responses: {
+            /** @description Successful Response */
+            201: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["CoachCheckinRead"];
+                };
+            };
+            /** @description Validation Error */
+            422: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/problem+json": components["schemas"]["ProblemDetail"];
+                };
+            };
+            /** @description Unexpected error */
+            default: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/problem+json": components["schemas"]["ProblemDetail"];
+                };
+            };
+        };
+    };
+    read_context_api_v1_coach_context_get: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody?: never;
+        responses: {
+            /** @description Successful Response */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "text/plain": string;
+                };
+            };
+            /** @description Unexpected error */
+            default: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/problem+json": components["schemas"]["ProblemDetail"];
+                };
+            };
+        };
+    };
+    check_model_api_v1_coach_model_test_post: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody?: never;
+        responses: {
+            /** @description Successful Response */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["CoachConnectionTest"];
+                };
+            };
+            /** @description Unexpected error */
+            default: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/problem+json": components["schemas"]["ProblemDetail"];
+                };
+            };
+        };
+    };
+    update_profile_api_v1_coach_profile_put: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": components["schemas"]["CoachProfileUpdate"];
+            };
+        };
+        responses: {
+            /** @description Successful Response */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["CoachProfileRead"];
+                };
+            };
+            /** @description Validation Error */
+            422: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/problem+json": components["schemas"]["ProblemDetail"];
+                };
+            };
+            /** @description Unexpected error */
+            default: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/problem+json": components["schemas"]["ProblemDetail"];
+                };
+            };
+        };
+    };
+    replace_races_api_v1_coach_races_put: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": components["schemas"]["CoachRaceWrite"][];
+            };
+        };
+        responses: {
+            /** @description Successful Response */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["CoachRaceRead"][];
+                };
+            };
+            /** @description Validation Error */
+            422: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/problem+json": components["schemas"]["ProblemDetail"];
+                };
+            };
+            /** @description Unexpected error */
+            default: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/problem+json": components["schemas"]["ProblemDetail"];
+                };
+            };
+        };
+    };
+    request_refresh_api_v1_coach_refresh_post: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody?: never;
+        responses: {
+            /** @description Successful Response */
+            202: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["CoachRefreshAccepted"];
                 };
             };
             /** @description Unexpected error */

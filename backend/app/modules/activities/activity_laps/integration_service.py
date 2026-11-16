@@ -6,6 +6,7 @@ from sqlalchemy.orm import Session
 
 import modules.activities.activity_laps.crud as activity_laps_crud
 import modules.activities.activity_laps.schema as activity_laps_schema
+import modules.activities.activity_laps.service as activity_laps_service
 import modules.activities.contributors as activities_contributors
 
 
@@ -23,6 +24,27 @@ def _list_laps_for_activities(
         Laps for activity IDs already scoped by the caller.
     """
     return activity_laps_crud.get_activities_laps(activity_ids, db)
+
+
+def list_laps_for_requester(
+    activity_id: int,
+    requester_user_id: int,
+    db: Session,
+) -> list[activity_laps_schema.ActivityLapsRead]:
+    """Return an activity's laps as the requester may see them (empty when not visible).
+
+    Access is decided by the activity root's child-collection rule, the same as the
+    laps endpoint.
+
+    Args:
+        activity_id: The parent activity.
+        requester_user_id: The user asking.
+        db: Database session.
+
+    Returns:
+        The first page of laps (up to the maximum page size).
+    """
+    return activity_laps_service.list_activity_laps(activity_id, requester_user_id, db).items
 
 
 def _store_laps(

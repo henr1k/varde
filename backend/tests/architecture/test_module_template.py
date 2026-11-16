@@ -15,6 +15,7 @@ import model_registry as app_model_registry
 import module_registry as runtime_module_registry
 import modules.activities.contributor_registry as activities_contributor_registry
 import modules.activities.model_registry as activities_model_registry
+import modules.coach.model_registry as coach_model_registry
 import modules.followers.model_registry as followers_model_registry
 
 _MODULES_DIR = Path(__file__).resolve().parents[2] / "app" / "modules"
@@ -56,6 +57,11 @@ def _absolute_imports(path: Path) -> set[str]:
 #: test below fails on an entry that has grown a surface, so the list cannot
 #: outlive the exemption.
 _NO_CROSS_MODULE_SURFACE: dict[str, str] = {
+    "coach": (
+        "A leaf feature: it reads peers through their integration_service, reacts to "
+        "activity.created (subscribers) and runs on a schedule (scheduled_jobs), all wired "
+        "by app/module_registry.py, and serves its own router. Nothing else calls it."
+    ),
     "activity_geocoding": (
         "Purely reactive: it geocodes on the activity.created event (subscribers) and "
         "reconciles on a schedule (scheduled_jobs), both wired by app/module_registry.py. "
@@ -113,8 +119,10 @@ def test_model_registries_collect_every_converted_model() -> None:
     }
     assert set(activities_model_registry.MODEL_MODULES) == expected_activities
     assert set(followers_model_registry.MODEL_MODULES) == {"modules.followers.models"}
+    assert set(coach_model_registry.MODEL_MODULES) == {"modules.coach.models"}
     assert (
-        expected_activities | set(followers_model_registry.MODEL_MODULES) == app_model_registry._CONVERTED_MODEL_MODULES
+        expected_activities | set(followers_model_registry.MODEL_MODULES) | set(coach_model_registry.MODEL_MODULES)
+        == app_model_registry._CONVERTED_MODEL_MODULES
     )
 
 

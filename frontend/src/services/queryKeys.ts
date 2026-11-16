@@ -344,6 +344,15 @@ export const queryKeys = {
    * count, and relationship-state query refetches the server-authoritative
    * state.
    */
+  /** AI coach domain: the dashboard and the context pack behind the latest update. */
+  coach: {
+    /** Broad prefix; settings, race, check-in and refresh mutations invalidate it. */
+    all: () => ['coach'] as const,
+    /** The coach dashboard (plan, report, charts, settings). */
+    dashboard: () => ['coach', 'dashboard'] as const,
+    /** The context pack the coach saw on its latest update. */
+    context: () => ['coach', 'context'] as const,
+  },
   followers: {
     /** Broad prefix; invalidating this cascades to every follow-graph query. */
     all: () => ['followers'] as const,

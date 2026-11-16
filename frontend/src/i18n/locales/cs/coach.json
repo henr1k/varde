@@ -1,0 +1,228 @@
+{
+  "title": "Coach",
+  "close": "Close",
+  "updated": "Updated {when}",
+  "refresh": "Refresh plan",
+  "refreshing": "Updating…",
+  "refreshRequested": "Your coach will update the plan in a few minutes.",
+  "refreshError": "Could not request an update.",
+  "settingsLink": "Coach settings",
+  "whatTheCoachSaw": "What the coach saw",
+  "contextTitle": "What the coach saw on its latest update",
+  "contextError": "Could not load the context.",
+  "notConfigured": {
+    "title": "No AI model is set up for you yet",
+    "description": "Add your API key or choose a model provider in the coach settings."
+  },
+  "notEnabled": {
+    "title": "Get a personal training plan",
+    "description": "Your coach reads your activities, sleep and notes, and keeps a 14-day plan up to date. Turn it on and add your goals in the coach settings.",
+    "action": "Set up the coach"
+  },
+  "pending": "Your coach is reviewing your latest data and updating the plan. This page refreshes on its own.",
+  "failed": "The last update failed. Your previous plan is still shown.",
+  "firstPlan": "Your first plan is being written. It usually takes a couple of minutes.",
+  "error": {
+    "title": "Could not load your coach",
+    "description": "Check your connection and try again.",
+    "retry": "Try again"
+  },
+  "today": {
+    "keySession": "Key session",
+    "doneToday": "Done today: {activities}",
+    "noSession": "Nothing planned today."
+  },
+  "readiness": {
+    "fresh": "Fresh",
+    "ready": "Ready",
+    "tired": "Tired",
+    "overreached": "Overreached",
+    "returning": "Returning"
+  },
+  "goals": {
+    "title": "Goals",
+    "daysToGo": "{days} days",
+    "goal": "goal {time}",
+    "prediction": "Prediction: {time}",
+    "none": "No goals yet.",
+    "add": "Add a goal",
+    "track": {
+      "ahead": "Ahead",
+      "on_track": "On track",
+      "at_risk": "At risk",
+      "off_track": "Off track",
+      "unknown": "Unknown"
+    }
+  },
+  "numbers": {
+    "title": "Numbers",
+    "thisWeek": "This week",
+    "stillPlanned": "{distance} still planned",
+    "fitness": "Fitness",
+    "fitnessHint": "42-day load (CTL)",
+    "fatigue": "Fatigue",
+    "fatigueHint": "7-day load (ATL)",
+    "form": "Form",
+    "formHint": "Fitness minus fatigue (TSB)"
+  },
+  "plan": {
+    "title": "Plan",
+    "thisWeek": "This week",
+    "nextWeek": "Next week",
+    "focus": "Focus",
+    "changes": "Changes since the last plan",
+    "noPlan": "No plan",
+    "status": {
+      "done": "Done",
+      "partial": "Partial",
+      "over": "Over",
+      "missed": "Missed",
+      "rest": "Rest",
+      "extra": "Extra",
+      "pending": "Planned"
+    }
+  },
+  "workout": {
+    "distance": "Distance",
+    "duration": "Duration",
+    "minutes": "{count} min",
+    "target": "Target",
+    "steps": "Steps",
+    "repeat": "Repeat {count}×",
+    "open": "Until lap",
+    "done": "Recorded",
+    "kind": {
+      "warmup": "Warm-up",
+      "active": "Run",
+      "recovery": "Recovery",
+      "rest": "Rest",
+      "cooldown": "Cool-down"
+    },
+    "type": {
+      "easy": "Easy",
+      "recovery": "Recovery",
+      "long": "Long run",
+      "tempo": "Tempo",
+      "threshold": "Threshold",
+      "intervals": "Intervals",
+      "hills": "Hills",
+      "progression": "Progression",
+      "fartlek": "Fartlek",
+      "strides": "Strides",
+      "race": "Race",
+      "rest": "Rest",
+      "cross": "Cross-training",
+      "strength": "Strength"
+    }
+  },
+  "read": {
+    "title": "Coach's read",
+    "tips": "Tips"
+  },
+  "flags": {
+    "title": "Watch-outs",
+    "none": "Nothing flagged."
+  },
+  "checkin": {
+    "title": "Tell your coach",
+    "placeholder": "Sore calf, bad sleep, travelling Thursday to Sunday, felt great…",
+    "label": "Note to your coach",
+    "send": "Send",
+    "hint": "The plan is updated a moment after you send a note.",
+    "sent": "Sent. Your coach will take it into account.",
+    "error": "Could not send the note."
+  },
+  "charts": {
+    "volume": "Weekly running volume",
+    "volumeSeries": "Distance",
+    "plannedSeries": "Planned",
+    "load": "Fitness and fatigue",
+    "fitnessSeries": "Fitness",
+    "fatigueSeries": "Fatigue"
+  },
+  "settings": {
+    "title": "Coach",
+    "subtitle": "Your AI running coach plans the next 14 days from your activities, sleep and notes, and updates the plan after every run and each morning.",
+    "enabled": "Coach enabled",
+    "enabledHint": "When on, your activities, sleep data and notes are sent to the AI model provider you choose below to write your plan.",
+    "goalsTitle": "Goals",
+    "primaryGoal": "Your main goal, in your own words",
+    "primaryGoalPlaceholder": "Run a sub-1:45 half marathon in spring and stay injury free.",
+    "racesTitle": "Races",
+    "racesHint": "A is the race the season builds toward, B is important, C is a training race.",
+    "raceName": "Race",
+    "raceDate": "Date",
+    "raceDistance": "Distance (km)",
+    "raceTarget": "Target time",
+    "racePriority": "Priority",
+    "raceNotes": "Notes",
+    "addRace": "Add race",
+    "removeRace": "Remove race {name}",
+    "aboutTitle": "About you",
+    "maxHr": "Max heart rate",
+    "maxHrHint": "Leave blank if unsure.",
+    "restHr": "Resting heart rate",
+    "restHrHint": "Leave blank to use your sleep data.",
+    "thresholdPace": "Threshold pace (min:sec per km)",
+    "thresholdPaceHint": "About your one-hour race pace. Leave blank if unsure.",
+    "thresholdPaceInvalid": "Use minutes and seconds, like 4:45.",
+    "experience": "Running background",
+    "experiencePlaceholder": "Years running, usual weekly distance, past races and times…",
+    "language": "Language for the coach",
+    "availabilityTitle": "Availability",
+    "availableDays": "Days you can train",
+    "longRunDay": "Preferred long-run day",
+    "noPreference": "No preference",
+    "maxWeeklyHours": "Max training hours per week",
+    "health": "Injuries and health",
+    "healthPlaceholder": "Past injuries, niggles, medication that affects heart rate…",
+    "preferences": "Preferences",
+    "preferencesPlaceholder": "Trails or road, treadmill, strength training, sessions you like or hate…",
+    "constraints": "Life schedule",
+    "constraintsPlaceholder": "Work travel, family schedule, morning-only runner, holidays…",
+    "save": "Save",
+    "saved": "Saved. Your coach will update the plan shortly.",
+    "saveError": "Could not save your coach settings.",
+    "weekday": {
+      "Mon": "Mon",
+      "Tue": "Tue",
+      "Wed": "Wed",
+      "Thu": "Thu",
+      "Fri": "Fri",
+      "Sat": "Sat",
+      "Sun": "Sun"
+    },
+    "model": {
+      "title": "AI model",
+      "subtitle": "Choose which model writes your plan. With your own API key, usage is billed to your account with that provider.",
+      "provider": "Provider",
+      "providers": {
+        "anthropic": "Anthropic (Claude)",
+        "openai_compatible": "OpenAI-compatible (OpenAI, OpenRouter, Mistral, Ollama…)"
+      },
+      "model": "Model",
+      "modelHintAnthropic": "Leave blank to use the server's default model.",
+      "modelHintOpenai": "The model id exactly as your provider names it.",
+      "baseUrl": "Server URL",
+      "baseUrlHint": "For example https://api.openai.com/v1, https://openrouter.ai/api/v1 or http://ollama:11434/v1. A server on your own network must be allowed by the administrator (SSRF_ALLOWED_HOSTS).",
+      "effort": "Effort",
+      "effortHint": "Higher effort thinks longer and costs more.",
+      "serverDefault": "Server default",
+      "apiKey": "Your API key",
+      "noKeyHint": "No key saved. Without one, Anthropic models use the server's key if the administrator set one up; local servers may not need a key.",
+      "keySavedHint": "A key ending in …{hint} is saved. It is stored encrypted and never shown again.",
+      "pasteKey": "Paste your API key",
+      "replaceKey": "Paste a new key to replace it",
+      "saveKey": "Save key",
+      "removeKey": "Remove key",
+      "keySaved": "API key saved.",
+      "keyRemoved": "API key removed.",
+      "keyError": "Could not update the API key.",
+      "check": "Check connection",
+      "checkHint": "Save your settings first; the check uses what is saved.",
+      "checkError": "Could not run the check.",
+      "using": "Using {model}",
+      "baseUrlPlaceholder": "https://api.openai.com/v1"
+    }
+  }
+}

@@ -297,6 +297,14 @@ class Settings(BaseSettings):
     SMTP_SECURE: bool = True
     SMTP_SECURE_TYPE: str = "starttls"
 
+    # --- AI coach ---
+    # ANTHROPIC_API_KEY is read separately via ``read_secret`` (Docker
+    # ``_FILE`` secrets supported) and never stored in Settings. It is the
+    # optional shared key; users can save their own key and model instead.
+    COACH_MODEL: str = "claude-opus-5-5"
+    COACH_EFFORT: str = "high"
+    COACH_DAILY_HOUR: int = 5
+
     # ----- Validators -----
 
     @field_validator("LOG_LEVEL", "ENVIRONMENT", mode="before")

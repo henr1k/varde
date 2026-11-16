@@ -32,6 +32,8 @@ import modules.activities.activity_workout_steps.integration_service as activity
 import modules.activities.contributor_registry as activities_contributor_registry
 import modules.auth.password_reset_tokens.subscriber_registry as password_reset_tokens_subscriber_registry
 import modules.auth.sign_up_tokens.subscriber_registry as sign_up_tokens_subscriber_registry
+import modules.coach.scheduled_jobs as coach_scheduled_jobs
+import modules.coach.subscriber_registry as coach_subscriber_registry
 import modules.notifications.subscriber_registry as notifications_subscriber_registry
 
 logger = core_logger.get_logger(__name__)
@@ -208,6 +210,13 @@ MODULES: tuple[RuntimeModule, ...] = (
         register_bus=notifications_subscriber_registry.register_all_notification_bus_subscribers,
         register_durable=notifications_subscriber_registry.register_all_notification_durable_handlers,
         nets=notifications_subscriber_registry.NOTIFICATION_DURABLE_SUBSCRIBER_NETS,
+    ),
+    RuntimeModule(
+        name="coach",
+        register_bus=coach_subscriber_registry.register_bus_subscribers,
+        register_durable=coach_subscriber_registry.register_durable_handlers,
+        nets=coach_subscriber_registry.DURABLE_SUBSCRIBER_NETS,
+        recurring_jobs=coach_scheduled_jobs.recurring_jobs,
     ),
 )
 

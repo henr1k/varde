@@ -1,4 +1,5 @@
 import {
+  Footprints,
   FolderInput,
   KeyRound,
   Plug,
@@ -38,6 +39,7 @@ export const SETTINGS_ZONES: readonly SettingsZone[] = [
   { name: 'settings-server', labelKey: 'settings.nav.server', icon: ServerCog, adminOnly: true },
   { name: 'settings-profile', labelKey: 'settings.nav.profile', icon: User, adminOnly: false },
   { name: 'settings-goals', labelKey: 'settings.nav.goals', icon: Target, adminOnly: false },
+  { name: 'settings-coach', labelKey: 'settings.nav.coach', icon: Footprints, adminOnly: false },
   {
     name: 'settings-security',
     labelKey: 'settings.nav.security',

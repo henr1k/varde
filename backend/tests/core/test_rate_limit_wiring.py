@@ -38,6 +38,7 @@ import modules.auth.identity_providers.public_router as idp_public_router
 import modules.auth.password_reset_tokens.router as password_reset_router
 import modules.auth.router as auth_router
 import modules.auth.sign_up_tokens.router as sign_up_tokens_router
+import modules.coach.router as coach_router
 import modules.followers.router as followers_router
 import modules.garmin.router as garmin_router
 import modules.server_settings.router as server_settings_router
@@ -138,6 +139,13 @@ _TIERED_ENDPOINTS = [
     pytest.param(activity_router.edit_activity, core_rate_limit.WRITE, id="activity-edit"),
     pytest.param(activity_router.edit_activities, core_rate_limit.WRITE, id="activity-bulk-edit"),
     pytest.param(activity_router.delete_activity, core_rate_limit.WRITE, id="activity-delete"),
+    pytest.param(coach_router.update_profile, core_rate_limit.WRITE, id="coach-update-profile"),
+    pytest.param(coach_router.replace_races, core_rate_limit.WRITE, id="coach-replace-races"),
+    pytest.param(coach_router.create_checkin, core_rate_limit.WRITE, id="coach-create-checkin"),
+    pytest.param(coach_router.request_refresh, core_rate_limit.WRITE, id="coach-request-refresh"),
+    pytest.param(coach_router.save_api_key, core_rate_limit.WRITE, id="coach-save-api-key"),
+    pytest.param(coach_router.delete_api_key, core_rate_limit.WRITE, id="coach-delete-api-key"),
+    pytest.param(coach_router.check_model, core_rate_limit.WRITE, id="coach-check-model"),
     pytest.param(followers_router.follow_user, core_rate_limit.WRITE, id="follow-user"),
     pytest.param(followers_router.accept_follow_request, core_rate_limit.WRITE, id="accept-follow-request"),
     pytest.param(followers_router.reject_follow_request, core_rate_limit.WRITE, id="reject-follow-request"),

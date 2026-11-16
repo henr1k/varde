@@ -45,6 +45,8 @@ dependencies = [
     # Pinned below the next minor: JASIL is pre-1.0 and documents breaking
     # changes on minor versions.
     "jasil[fastapi,geocoding,jobs,migrations]>=0.6.1,<0.7.0",
+    "anthropic>=1.15.0,<2",
+    "openai>=1.60,<3",
 ]
 
 [project.optional-dependencies]

@@ -65,6 +65,10 @@ FOLLOWERS_SCOPE: Final[tuple[str, ...]] = (
     "followers:read",
     "followers:write",
 )
+COACH_SCOPE: Final[tuple[str, ...]] = (
+    "coach:read",
+    "coach:write",
+)
 HEALTH_SCOPE: Final[tuple[str, ...]] = (
     "health:read",
     "health:write",
@@ -94,6 +98,8 @@ SCOPE_DICT: Final[dict[str, str]] = {
     "activities:upload": "Upload privileges over activities",
     "followers:read": "Read privileges over the follower/following graph",
     "followers:write": "Follow, unfollow, accept and remove followers",
+    "coach:read": "Read the AI coach plan, report and settings",
+    "coach:write": "Change AI coach settings, races and check-ins, and request updates",
     "health:read": "Read privileges over health data",
     "health:write": "Write privileges over health data",
     "health_targets:read": "Read privileges over health targets data",
@@ -109,6 +115,7 @@ SCOPE_DICT: Final[dict[str, str]] = {
 REGULAR_ACCESS_SCOPE: Final[tuple[str, ...]] = (
     USERS_REGULAR_SCOPE
     + ACTIVITIES_SCOPE
+    + COACH_SCOPE
     + FOLLOWERS_SCOPE
     + GEARS_SCOPE
     + IDENTITY_PROVIDERS_REGULAR_SCOPE

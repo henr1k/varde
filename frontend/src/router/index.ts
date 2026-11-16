@@ -101,6 +101,13 @@ const router = createRouter({
       meta: { requiresAuth: false, cardless: true },
     },
     {
+      path: '/coach',
+      name: 'coach',
+      component: () => import('@/features/coach/views/CoachView.vue'),
+      // Cardless: the view supplies its own card surfaces.
+      meta: { requiresAuth: true, cardless: true },
+    },
+    {
       path: '/health',
       component: () => import('@/features/health/views/HealthView.vue'),
       // Cardless: the health shell supplies its own sidebar + content surfaces.
@@ -187,6 +194,11 @@ const router = createRouter({
           path: 'goals',
           name: 'settings-goals',
           component: () => import('@/features/goals/views/GoalsSettingsView.vue'),
+        },
+        {
+          path: 'coach',
+          name: 'settings-coach',
+          component: () => import('@/features/coach/views/CoachSettingsView.vue'),
         },
         {
           path: 'security',
