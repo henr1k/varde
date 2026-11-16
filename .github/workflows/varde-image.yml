@@ -6,7 +6,7 @@ name: Varde image
 # Tags:
 #   push to main  -> :latest, :sha-<short sha>
 #   tag vX.Y.Z    -> :vX.Y.Z, :latest
-#   manual run    -> :dev-<short sha>
+#   manual run    -> on main: same as a push (rebuilds :latest); other branches: :dev-<short sha>
 
 on:
   push:
@@ -56,7 +56,7 @@ jobs:
           set -eu
           image="ghcr.io/$(echo "$REPOSITORY" | tr '[:upper:]' '[:lower:]')"
           short="${SHA::7}"
-          if [ "$EVENT" = "workflow_dispatch" ]; then
+          if [ "$EVENT" = "workflow_dispatch" ] && [ "$REF_NAME" != "main" ]; then
             tags="$image:dev-$short"
           elif [ "$REF_TYPE" = "tag" ]; then
             tags="$image:$REF_NAME $image:latest"
