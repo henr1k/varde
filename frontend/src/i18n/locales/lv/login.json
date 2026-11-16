@@ -48,7 +48,7 @@
   "ssoAutoCreateDisabled": "Automātiska kontu izveide ir atspējota",
   "ssoErrorUndefined": "Vienotā pieteikšanās neizdevās",
   "noLoginMethods": "Šajā serverī nav iespējota neviena pieteikšanās metode",
-  "imageAlt": "Endurain pieteikšanās ilustrācija",
+  "imageAlt": "Varde pieteikšanās ilustrācija",
   "tagline1": "Izseko katru kustību",
   "tagline2": "Pārvaldi katru mirkli"
 }

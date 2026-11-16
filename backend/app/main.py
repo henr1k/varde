@@ -377,7 +377,7 @@ def create_app() -> FastAPI:
         lifespan=lifespan,
         docs_url=docs_url,
         redoc_url=redoc_url,
-        title="Endurain",
+        title="Varde",
         summary="Endurain API for the Endurain app",
         version=core_config.API_VERSION,
         license_info={

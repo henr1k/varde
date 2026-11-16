@@ -1,5 +1,5 @@
 {
-  "logoAlt": "Endurain 標誌",
+  "logoAlt": "Varde 標誌",
   "notFound": {
     "title": "找不到頁面",
     "message": "您所尋找的頁面不存在或已移動",
@@ -13,9 +13,9 @@
   },
   "configError": {
     "title": "設定錯誤",
-    "message": "應用程式無法連線到 Endurain 後端。這通常是由於缺少或錯誤設定了 ENDURAIN_HOST 環境變數，或是後端未執行。",
+    "message": "應用程式無法連線到 Varde 後端。這通常是由於缺少或錯誤設定了 ENDURAIN_HOST 環境變數，或是後端未執行。",
     "notSet": "（未設定）",
-    "help": "請檢查 ENDURAIN_HOST 是否指向可存取您的 Endurain 執行個體的網址（例如 https://endurain.example.com），並確認後端正在執行，然後重新載入頁面。",
+    "help": "請檢查 ENDURAIN_HOST 是否指向可存取您的 Varde 執行個體的網址（例如 https://endurain.example.com），並確認後端正在執行，然後重新載入頁面。",
     "reload": "重新載入"
   },
   "dismiss": "關閉",

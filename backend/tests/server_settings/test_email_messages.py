@@ -9,7 +9,7 @@ class TestGetTestEmail:
             "Alice", "mail.example.com:587", "https://endurain.example.com", "en"
         )
 
-        assert "Endurain" in subject
+        assert "Varde" in subject
         assert "mail.example.com:587" in html_body
         assert "mail.example.com:587" in text_body
         assert "Alice" in text_body
@@ -25,4 +25,4 @@ class TestGetTestEmail:
     def test_unsupported_locale_falls_back_to_english(self):
         subject, _, _ = email_messages.get_test_email("A", "h:25", "https://e.example.com", "xx")
 
-        assert subject == "Endurain - Test email"
+        assert subject == "Varde - Test email"

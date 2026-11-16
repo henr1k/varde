@@ -357,7 +357,7 @@
     },
     "email": {
       "title": "E-post",
-      "description": "Endurain skickar e-post för återställning av lösenord och registrering via den SMTP-server som är konfigurerad i miljön.",
+      "description": "Varde skickar e-post för återställning av lösenord och registrering via den SMTP-server som är konfigurerad i miljön.",
       "statusLoadError": "E-postkonfigurationen kunde inte kontrolleras.",
       "configured": "E-post är konfigurerad.",
       "notConfigured": "E-post är inte konfigurerad:",
@@ -741,7 +741,7 @@
       "retrievingGear": "Hämtar din Strava-utrustning i bakgrunden…",
       "retrieveGearError": "Kunde inte starta hämtning av Strava-utrustning. Försök igen.",
       "unlinkTitle": "Koppla bort Strava?",
-      "unlinkBody": "Endurain slutar importera från Strava. Dina befintliga aktiviteter behålls.",
+      "unlinkBody": "Varde slutar importera från Strava. Dina befintliga aktiviteter behålls.",
       "unlinkSuccess": "Strava bortkopplad",
       "unlinkError": "Kunde inte koppla bort Strava. Försök igen."
     },
@@ -771,7 +771,7 @@
       "retrievingHealth": "Hämtar din Garmin Connect-hälsodata i bakgrunden…",
       "retrieveHealthError": "Kunde inte starta hämtning av Garmin Connect-hälsodata. Försök igen.",
       "unlinkTitle": "Koppla bort Garmin Connect?",
-      "unlinkBody": "Endurain slutar importera från Garmin Connect. Dina befintliga data behålls.",
+      "unlinkBody": "Varde slutar importera från Garmin Connect. Dina befintliga data behålls.",
       "unlinkSuccess": "Garmin Connect bortkopplad",
       "unlinkError": "Kunde inte koppla bort Garmin Connect. Försök igen."
     }

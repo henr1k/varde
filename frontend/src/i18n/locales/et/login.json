@@ -48,7 +48,7 @@
   "ssoAutoCreateDisabled": "Automaatne konto loomine on keelatud",
   "ssoErrorUndefined": "Ühekordne sisselogimine ebaõnnestus",
   "noLoginMethods": "Selles serveris pole ühtegi sisselogimismeetodit lubatud",
-  "imageAlt": "Enduraini sisselogimise illustratsioon",
+  "imageAlt": "Vardei sisselogimise illustratsioon",
   "tagline1": "Jälgi iga liigutust",
   "tagline2": "Naudi iga hetke"
 }

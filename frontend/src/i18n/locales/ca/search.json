@@ -1,6 +1,6 @@
 {
   "title": "Cerca",
-  "subtitle": "Troba usuaris, activitats i equipament a Endurain.",
+  "subtitle": "Troba usuaris, activitats i equipament a Varde.",
   "placeholder": "Cerca…",
   "clear": "Esborra la cerca",
   "scopes": {
@@ -28,7 +28,7 @@
     "inactive": "Inactiu"
   },
   "idle": {
-    "title": "Cerca a Endurain",
+    "title": "Cerca a Varde",
     "description": "Tria el que vols cercar i comença a escriure per veure resultats."
   },
   "empty": {

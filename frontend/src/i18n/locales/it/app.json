@@ -1,5 +1,5 @@
 {
-  "logoAlt": "Logo Endurain",
+  "logoAlt": "Logo Varde",
   "notFound": {
     "title": "Pagina non trovata",
     "message": "La pagina che stai cercando non esiste o è stata spostata",
@@ -13,9 +13,9 @@
   },
   "configError": {
     "title": "Errore di configurazione",
-    "message": "L'app non è riuscita a raggiungere il backend di Endurain. Di solito ciò è causato da una variabile d'ambiente ENDURAIN_HOST mancante o configurata in modo errato, oppure dal fatto che il backend non è in esecuzione.",
+    "message": "L'app non è riuscita a raggiungere il backend di Varde. Di solito ciò è causato da una variabile d'ambiente ENDURAIN_HOST mancante o configurata in modo errato, oppure dal fatto che il backend non è in esecuzione.",
     "notSet": "(non impostato)",
-    "help": "Verifica che ENDURAIN_HOST punti all'URL in cui la tua istanza di Endurain è raggiungibile (ad esempio https://endurain.example.com) e che il backend sia in esecuzione, poi ricarica la pagina.",
+    "help": "Verifica che ENDURAIN_HOST punti all'URL in cui la tua istanza di Varde è raggiungibile (ad esempio https://endurain.example.com) e che il backend sia in esecuzione, poi ricarica la pagina.",
     "reload": "Ricarica"
   },
   "dismiss": "Chiudi",

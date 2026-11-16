@@ -357,7 +357,7 @@
     },
     "email": {
       "title": "E-mail",
-      "description": "Endurain verstuurt e-mails voor het opnieuw instellen van het wachtwoord en voor registratie via de SMTP-server die in de omgeving is geconfigureerd.",
+      "description": "Varde verstuurt e-mails voor het opnieuw instellen van het wachtwoord en voor registratie via de SMTP-server die in de omgeving is geconfigureerd.",
       "statusLoadError": "De e-mailconfiguratie kon niet worden gecontroleerd.",
       "configured": "E-mail is geconfigureerd.",
       "notConfigured": "E-mail is niet geconfigureerd:",
@@ -741,7 +741,7 @@
       "retrievingGear": "Je Strava-uitrusting wordt op de achtergrond opgehaald…",
       "retrieveGearError": "Strava-uitrusting ophalen kon niet worden gestart. Probeer het opnieuw.",
       "unlinkTitle": "Strava verbreken?",
-      "unlinkBody": "Endurain stopt met importeren van Strava. Je bestaande activiteiten blijven bewaard.",
+      "unlinkBody": "Varde stopt met importeren van Strava. Je bestaande activiteiten blijven bewaard.",
       "unlinkSuccess": "Strava verbroken",
       "unlinkError": "Strava kon niet worden verbroken. Probeer het opnieuw."
     },
@@ -771,7 +771,7 @@
       "retrievingHealth": "Je Garmin Connect-gezondheidsgegevens worden op de achtergrond opgehaald…",
       "retrieveHealthError": "Garmin Connect-gezondheidsgegevens ophalen kon niet worden gestart. Probeer het opnieuw.",
       "unlinkTitle": "Garmin Connect verbreken?",
-      "unlinkBody": "Endurain stopt met importeren van Garmin Connect. Je bestaande gegevens blijven bewaard.",
+      "unlinkBody": "Varde stopt met importeren van Garmin Connect. Je bestaande gegevens blijven bewaard.",
       "unlinkSuccess": "Garmin Connect verbroken",
       "unlinkError": "Garmin Connect kon niet worden verbroken. Probeer het opnieuw."
     }

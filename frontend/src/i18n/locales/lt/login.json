@@ -48,7 +48,7 @@
   "ssoAutoCreateDisabled": "Automatinis paskyrų kūrimas išjungtas",
   "ssoErrorUndefined": "Vieningas prisijungimas nepavyko",
   "noLoginMethods": "Šiame serveryje neįjungtas joks prisijungimo būdas",
-  "imageAlt": "Endurain prisijungimo iliustracija",
+  "imageAlt": "Varde prisijungimo iliustracija",
   "tagline1": "Stebėk kiekvieną judesį",
   "tagline2": "Valdyk kiekvieną akimirką"
 }

@@ -1,6 +1,6 @@
 {
   "title": "Búsqueda",
-  "subtitle": "Encuentra usuarios, actividades y equipamiento en Endurain.",
+  "subtitle": "Encuentra usuarios, actividades y equipamiento en Varde.",
   "placeholder": "Buscar\u2026",
   "clear": "Borrar búsqueda",
   "scopes": {
@@ -28,7 +28,7 @@
     "inactive": "Inactivo"
   },
   "idle": {
-    "title": "Buscar en Endurain",
+    "title": "Buscar en Varde",
     "description": "Elige qué buscar y empieza a escribir para ver resultados."
   },
   "empty": {

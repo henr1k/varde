@@ -1,5 +1,5 @@
 {
-  "logoAlt": "Endurain logo",
+  "logoAlt": "Varde logo",
   "notFound": {
     "title": "Lehte ei leitud",
     "message": "Otsitavat lehte ei ole olemas või see on teisaldatud",
@@ -13,9 +13,9 @@
   },
   "configError": {
     "title": "Seadistusviga",
-    "message": "Rakendus ei saanud Enduraini backendiga ühendust. Tavaliselt põhjustab seda puuduv või valesti seadistatud keskkonnamuutuja ENDURAIN_HOST või see, et backend ei tööta.",
+    "message": "Rakendus ei saanud Vardei backendiga ühendust. Tavaliselt põhjustab seda puuduv või valesti seadistatud keskkonnamuutuja ENDURAIN_HOST või see, et backend ei tööta.",
     "notSet": "(määramata)",
-    "help": "Kontrolli, et ENDURAIN_HOST viitaks aadressile, kus sinu Enduraini eksemplar on kättesaadav (näiteks https://endurain.example.com) ja et backend töötab, seejärel laadi leht uuesti.",
+    "help": "Kontrolli, et ENDURAIN_HOST viitaks aadressile, kus sinu Vardei eksemplar on kättesaadav (näiteks https://endurain.example.com) ja et backend töötab, seejärel laadi leht uuesti.",
     "reload": "Laadi uuesti"
   },
   "dismiss": "Sulge",

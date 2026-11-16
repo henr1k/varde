@@ -1,5 +1,5 @@
 {
-  "logoAlt": "Endurain-logo",
+  "logoAlt": "Varde-logo",
   "notFound": {
     "title": "Pagina niet gevonden",
     "message": "De pagina die je zoekt bestaat niet of is verplaatst",
@@ -13,9 +13,9 @@
   },
   "configError": {
     "title": "Configuratiefout",
-    "message": "De app kon de Endurain-backend niet bereiken. Dit komt meestal door een ontbrekende of verkeerd geconfigureerde ENDURAIN_HOST-omgevingsvariabele, of doordat de backend niet draait.",
+    "message": "De app kon de Varde-backend niet bereiken. Dit komt meestal door een ontbrekende of verkeerd geconfigureerde ENDURAIN_HOST-omgevingsvariabele, of doordat de backend niet draait.",
     "notSet": "(niet ingesteld)",
-    "help": "Controleer of ENDURAIN_HOST verwijst naar de URL waar je Endurain-instantie bereikbaar is (bijvoorbeeld https://endurain.example.com) en dat de backend draait, en herlaad daarna de pagina.",
+    "help": "Controleer of ENDURAIN_HOST verwijst naar de URL waar je Varde-instantie bereikbaar is (bijvoorbeeld https://endurain.example.com) en dat de backend draait, en herlaad daarna de pagina.",
     "reload": "Opnieuw laden"
   },
   "dismiss": "Sluiten",

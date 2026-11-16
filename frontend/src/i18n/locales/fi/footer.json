@@ -1,10 +1,6 @@
 {
   "repository": "Koodivarasto",
-  "documentation": "Dokumentaatio",
-  "mastodon": "Endurainin Mastodon-tili",
-  "bluesky": "Endurainin Bluesky-profiili",
-  "discord": "Endurainin Discord-palvelin",
-  "linkedin": "Endurainin LinkedIn-sivu",
   "compatibleStrava": "Yhteensopiva Stravan kanssa",
-  "worksGarmin": "Toimii Garmin Connectin kanssa"
+  "worksGarmin": "Toimii Garmin Connectin kanssa",
+  "basedOn": "Based on Endurain © {years} João Vitória Silva and contributors"
 }

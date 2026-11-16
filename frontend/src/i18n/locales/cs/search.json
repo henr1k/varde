@@ -1,6 +1,6 @@
 {
   "title": "Hledat",
-  "subtitle": "Najděte uživatele, aktivity a vybavení napříč Endurain.",
+  "subtitle": "Najděte uživatele, aktivity a vybavení napříč Varde.",
   "placeholder": "Hledat…",
   "clear": "Vymazat hledání",
   "scopes": {
@@ -28,7 +28,7 @@
     "inactive": "Neaktivní"
   },
   "idle": {
-    "title": "Hledat v Endurain",
+    "title": "Hledat v Varde",
     "description": "Vyberte, co chcete najít, a začněte psát, abyste viděli shody."
   },
   "empty": {

@@ -1,5 +1,5 @@
 {
-  "logoAlt": "Logo de Endurain",
+  "logoAlt": "Logo de Varde",
   "notFound": {
     "title": "Página no encontrada",
     "message": "La página que buscas no existe o se ha movido",
@@ -13,9 +13,9 @@
   },
   "configError": {
     "title": "Error de configuración",
-    "message": "La aplicación no pudo conectar con el backend de Endurain. Esto suele deberse a una variable de entorno ENDURAIN_HOST ausente o mal configurada, o a que el backend no está en ejecución.",
+    "message": "La aplicación no pudo conectar con el backend de Varde. Esto suele deberse a una variable de entorno ENDURAIN_HOST ausente o mal configurada, o a que el backend no está en ejecución.",
     "notSet": "(sin definir)",
-    "help": "Comprueba que ENDURAIN_HOST apunta a la URL donde tu instancia de Endurain es accesible (por ejemplo https://endurain.example.com) y que el backend está en ejecución; después, vuelve a cargar la página.",
+    "help": "Comprueba que ENDURAIN_HOST apunta a la URL donde tu instancia de Varde es accesible (por ejemplo https://endurain.example.com) y que el backend está en ejecución; después, vuelve a cargar la página.",
     "reload": "Recargar"
   },
   "dismiss": "Descartar",

@@ -357,7 +357,7 @@
     },
     "email": {
       "title": "電子郵件",
-      "description": "Endurain 透過環境中設定的 SMTP 伺服器寄送重設密碼與註冊郵件。",
+      "description": "Varde 透過環境中設定的 SMTP 伺服器寄送重設密碼與註冊郵件。",
       "statusLoadError": "無法檢查電子郵件設定。",
       "configured": "電子郵件已設定。",
       "notConfigured": "電子郵件尚未設定：",
@@ -741,7 +741,7 @@
       "retrievingGear": "正在背景擷取您的 Strava 裝備…",
       "retrieveGearError": "無法開始擷取 Strava 裝備，請再試一次。",
       "unlinkTitle": "中斷連接 Strava？",
-      "unlinkBody": "Endurain 將停止從 Strava 匯入，您現有的活動將保留。",
+      "unlinkBody": "Varde 將停止從 Strava 匯入，您現有的活動將保留。",
       "unlinkSuccess": "Strava 已中斷連接",
       "unlinkError": "無法中斷連接 Strava，請再試一次。"
     },
@@ -771,7 +771,7 @@
       "retrievingHealth": "正在背景擷取您的 Garmin Connect 健康數據…",
       "retrieveHealthError": "無法開始擷取 Garmin Connect 健康數據，請再試一次。",
       "unlinkTitle": "中斷連接 Garmin Connect？",
-      "unlinkBody": "Endurain 將停止從 Garmin Connect 匯入，您現有的資料將保留。",
+      "unlinkBody": "Varde 將停止從 Garmin Connect 匯入，您現有的資料將保留。",
       "unlinkSuccess": "Garmin Connect 已中斷連接",
       "unlinkError": "無法中斷連接 Garmin Connect，請再試一次。"
     }

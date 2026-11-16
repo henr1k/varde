@@ -48,7 +48,7 @@
   "ssoAutoCreateDisabled": "Automatisk kontoskapning är inaktiverad",
   "ssoErrorUndefined": "Enkel inloggning misslyckades",
   "noLoginMethods": "Inga inloggningsmetoder är aktiverade på den här servern",
-  "imageAlt": "Endurain inloggningsillustration",
+  "imageAlt": "Varde inloggningsillustration",
   "tagline1": "Spåra varje rörelse",
   "tagline2": "Äg varje ögonblick"
 }

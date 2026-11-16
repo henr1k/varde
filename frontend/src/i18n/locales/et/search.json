@@ -1,6 +1,6 @@
 {
   "title": "Otsing",
-  "subtitle": "Leia kasutajaid, tegevusi ja varustust kogu Endurainist.",
+  "subtitle": "Leia kasutajaid, tegevusi ja varustust kogu Vardeist.",
   "placeholder": "Otsi…",
   "clear": "Tühjenda otsing",
   "scopes": {
@@ -28,7 +28,7 @@
     "inactive": "Mitteaktiivne"
   },
   "idle": {
-    "title": "Otsi Endurainist",
+    "title": "Otsi Vardeist",
     "description": "Vali, mida otsida, seejärel hakka tippima, et näha vasteid."
   },
   "empty": {

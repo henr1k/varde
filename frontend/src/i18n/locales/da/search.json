@@ -1,6 +1,6 @@
 {
   "title": "Søg",
-  "subtitle": "Find brugere, aktiviteter og udstyr på tværs af Endurain.",
+  "subtitle": "Find brugere, aktiviteter og udstyr på tværs af Varde.",
   "placeholder": "Søg…",
   "clear": "Ryd søgning",
   "scopes": {
@@ -28,7 +28,7 @@
     "inactive": "Inaktiv"
   },
   "idle": {
-    "title": "Søg i Endurain",
+    "title": "Søg i Varde",
     "description": "Vælg, hvad du vil finde, og begynd at skrive for at se resultater."
   },
   "empty": {

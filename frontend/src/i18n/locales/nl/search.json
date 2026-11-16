@@ -1,6 +1,6 @@
 {
   "title": "Zoeken",
-  "subtitle": "Zoek gebruikers, activiteiten en uitrusting in Endurain.",
+  "subtitle": "Zoek gebruikers, activiteiten en uitrusting in Varde.",
   "placeholder": "Zoeken…",
   "clear": "Zoekterm wissen",
   "scopes": {
@@ -28,7 +28,7 @@
     "inactive": "Inactief"
   },
   "idle": {
-    "title": "Zoek in Endurain",
+    "title": "Zoek in Varde",
     "description": "Kies wat je wilt zoeken en begin dan te typen om resultaten te zien."
   },
   "empty": {

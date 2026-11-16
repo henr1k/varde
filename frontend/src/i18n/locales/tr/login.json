@@ -48,7 +48,7 @@
   "ssoAutoCreateDisabled": "Otomatik hesap oluşturma devre dışı",
   "ssoErrorUndefined": "Tek oturum açma başarısız oldu",
   "noLoginMethods": "Bu sunucuda etkin bir giriş yöntemi yok",
-  "imageAlt": "Endurain giriş görseli",
+  "imageAlt": "Varde giriş görseli",
   "tagline1": "Her hareketi takip et",
   "tagline2": "Her anın sahibi ol"
 }

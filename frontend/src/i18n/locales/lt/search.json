@@ -1,6 +1,6 @@
 {
   "title": "Paieška",
-  "subtitle": "Raskite naudotojus, veiklas ir įrangą visame Endurain.",
+  "subtitle": "Raskite naudotojus, veiklas ir įrangą visame Varde.",
   "placeholder": "Ieškoti…",
   "clear": "Išvalyti paiešką",
   "scopes": {
@@ -28,7 +28,7 @@
     "inactive": "Neaktyvus"
   },
   "idle": {
-    "title": "Ieškoti Endurain",
+    "title": "Ieškoti Varde",
     "description": "Pasirinkite, ko ieškoti, tada pradėkite rašyti, kad pamatytumėte atitikmenis."
   },
   "empty": {

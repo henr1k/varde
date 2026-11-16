@@ -1,10 +1,6 @@
 {
   "repository": "Depozit",
-  "documentation": "Documentație",
-  "mastodon": "Contul Mastodon Endurain",
-  "bluesky": "Profilul Bluesky Endurain",
-  "discord": "Serverul Discord Endurain",
-  "linkedin": "Pagina LinkedIn Endurain",
   "compatibleStrava": "Compatibil cu Strava",
-  "worksGarmin": "Funcționează cu Garmin Connect"
+  "worksGarmin": "Funcționează cu Garmin Connect",
+  "basedOn": "Based on Endurain © {years} João Vitória Silva and contributors"
 }

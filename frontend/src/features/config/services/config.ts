@@ -15,7 +15,7 @@ export const DEFAULT_APP_CONFIG: AppConfig = {
     federation: false,
   },
   branding: {
-    appName: 'Endurain',
+    appName: 'Varde',
   },
   map: DEFAULT_MAP_CONFIG,
   enabledLocales: null,

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
-import { BookOpen, GitBranch } from '@lucide/vue'
+import { GitBranch } from '@lucide/vue'
 
 import { useAppConfig, useFeatureFlags } from '@/features/config/composables/useAppConfig'
 import { INTEGRATION_LOGOS } from '@/constants/integrationLogos'
@@ -23,69 +23,29 @@ const yearRange = computed(() => {
       <p
         class="flex flex-wrap items-center justify-center gap-x-2 gap-y-1 text-sm text-muted-foreground"
       >
-        <span>© {{ yearRange }} {{ config.branding.appName }}</span>
+        <span>{{ config.branding.appName }}</span>
         <span aria-hidden="true">•</span>
         <a
-          class="inline-flex items-center hover:text-foreground"
-          href="https://github.com/endurain-project"
+          class="inline-flex items-center gap-1 hover:text-foreground"
+          href="https://github.com/henr1k/varde"
           target="_blank"
           rel="noopener noreferrer"
-          :aria-label="t('footer.repository')"
         >
-          <GitBranch class="size-4" />
+          <GitBranch class="size-3.5" aria-hidden="true" />
+          {{ t('footer.repository') }}
         </a>
         <span aria-hidden="true">•</span>
+        <!-- AGPL-3.0: Varde is a modified version of Endurain; keep this attribution. -->
         <a
-          class="inline-flex items-center hover:text-foreground"
-          href="https://docs.endurain.com"
+          class="hover:text-foreground"
+          href="https://github.com/endurain-project/endurain"
           target="_blank"
           rel="noopener noreferrer"
-          :aria-label="t('footer.documentation')"
         >
-          <BookOpen class="size-4" />
+          {{ t('footer.basedOn', { years: yearRange }) }}
         </a>
         <span aria-hidden="true">•</span>
-        <a
-          class="inline-flex items-center hover:text-foreground"
-          href="https://fosstodon.org/@endurain"
-          target="_blank"
-          rel="noopener noreferrer"
-          :aria-label="t('footer.mastodon')"
-        >
-          Mastodon
-        </a>
-        <span aria-hidden="true">•</span>
-        <a
-          class="inline-flex items-center hover:text-foreground"
-          href="https://bsky.app/profile/endurain.bsky.social"
-          target="_blank"
-          rel="noopener noreferrer"
-          :aria-label="t('footer.bluesky')"
-        >
-          Bluesky
-        </a>
-        <span aria-hidden="true">•</span>
-        <a
-          class="inline-flex items-center hover:text-foreground"
-          href="https://discord.gg/6VUjUq2uZR"
-          target="_blank"
-          rel="noopener noreferrer"
-          :aria-label="t('footer.discord')"
-        >
-          Discord
-        </a>
-        <span aria-hidden="true">•</span>
-        <a
-          class="inline-flex items-center hover:text-foreground"
-          href="https://www.linkedin.com/company/endurain"
-          target="_blank"
-          rel="noopener noreferrer"
-          :aria-label="t('footer.linkedin')"
-        >
-          LinkedIn
-        </a>
-        <span aria-hidden="true">•</span>
-        <span>v0.20.2</span>
+        <span>AGPL-3.0</span>
       </p>
 
       <p

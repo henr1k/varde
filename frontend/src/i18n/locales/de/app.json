@@ -1,5 +1,5 @@
 {
-  "logoAlt": "Endurain Logo",
+  "logoAlt": "Varde Logo",
   "notFound": {
     "title": "Seite nicht gefunden",
     "message": "Die gesuchte Seite existiert nicht oder wurde verschoben",
@@ -13,9 +13,9 @@
   },
   "configError": {
     "title": "Konfigurationsfehler",
-    "message": "Die App konnte das Endurain-Backend nicht erreichen. Das liegt meist an einer fehlenden oder falsch konfigurierten Umgebungsvariable ENDURAIN_HOST oder daran, dass das Backend nicht läuft.",
+    "message": "Die App konnte das Varde-Backend nicht erreichen. Das liegt meist an einer fehlenden oder falsch konfigurierten Umgebungsvariable ENDURAIN_HOST oder daran, dass das Backend nicht läuft.",
     "notSet": "(nicht gesetzt)",
-    "help": "Stelle sicher, dass ENDURAIN_HOST auf die URL zeigt, unter der deine Endurain-Instanz erreichbar ist (zum Beispiel https://endurain.example.com), und dass das Backend läuft. Lade anschließend die Seite neu.",
+    "help": "Stelle sicher, dass ENDURAIN_HOST auf die URL zeigt, unter der deine Varde-Instanz erreichbar ist (zum Beispiel https://endurain.example.com), und dass das Backend läuft. Lade anschließend die Seite neu.",
     "reload": "Neu laden"
   },
   "dismiss": "Schließen",

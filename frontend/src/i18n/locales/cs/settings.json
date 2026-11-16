@@ -357,7 +357,7 @@
     },
     "email": {
       "title": "E-mail",
-      "description": "Endurain odesílá e-maily pro obnovení hesla a registraci přes SMTP server nakonfigurovaný v prostředí.",
+      "description": "Varde odesílá e-maily pro obnovení hesla a registraci přes SMTP server nakonfigurovaný v prostředí.",
       "statusLoadError": "Nepodařilo se zkontrolovat konfiguraci e-mailu.",
       "configured": "E-mail je nakonfigurován.",
       "notConfigured": "E-mail není nakonfigurován:",
@@ -741,7 +741,7 @@
       "retrievingGear": "Načítání vašeho vybavení ze služby Strava na pozadí…",
       "retrieveGearError": "Nepodařilo se zahájit načítání vybavení ze služby Strava. Zkuste to prosím znovu.",
       "unlinkTitle": "Odpojit službu Strava?",
-      "unlinkBody": "Endurain přestane importovat ze služby Strava. Vaše stávající aktivity zůstanou zachovány.",
+      "unlinkBody": "Varde přestane importovat ze služby Strava. Vaše stávající aktivity zůstanou zachovány.",
       "unlinkSuccess": "Strava odpojena",
       "unlinkError": "Nepodařilo se odpojit službu Strava. Zkuste to prosím znovu."
     },
@@ -771,7 +771,7 @@
       "retrievingHealth": "Načítání vašich zdravotních dat z Garmin Connect na pozadí…",
       "retrieveHealthError": "Nepodařilo se zahájit načítání zdravotních dat z Garmin Connect. Zkuste to prosím znovu.",
       "unlinkTitle": "Odpojit Garmin Connect?",
-      "unlinkBody": "Endurain přestane importovat z Garmin Connect. Vaše stávající data zůstanou zachována.",
+      "unlinkBody": "Varde přestane importovat z Garmin Connect. Vaše stávající data zůstanou zachována.",
       "unlinkSuccess": "Garmin Connect odpojen",
       "unlinkError": "Nepodařilo se odpojit Garmin Connect. Zkuste to prosím znovu."
     }

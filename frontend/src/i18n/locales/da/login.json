@@ -48,7 +48,7 @@
   "ssoAutoCreateDisabled": "Automatisk oprettelse af konti er deaktiveret",
   "ssoErrorUndefined": "Single sign-on mislykkedes",
   "noLoginMethods": "Ingen login-metoder er aktiveret på denne server",
-  "imageAlt": "Endurain login-illustration",
+  "imageAlt": "Varde login-illustration",
   "tagline1": "Følg hvert skridt",
   "tagline2": "Ej hvert øjeblik"
 }

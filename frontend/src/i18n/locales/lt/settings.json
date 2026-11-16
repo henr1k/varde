@@ -357,7 +357,7 @@
     },
     "email": {
       "title": "El. paštas",
-      "description": "Endurain slaptažodžio atkūrimo ir registracijos laiškus siunčia per aplinkoje sukonfigūruotą SMTP serverį.",
+      "description": "Varde slaptažodžio atkūrimo ir registracijos laiškus siunčia per aplinkoje sukonfigūruotą SMTP serverį.",
       "statusLoadError": "Nepavyko patikrinti el. pašto konfigūracijos.",
       "configured": "El. paštas sukonfigūruotas.",
       "notConfigured": "El. paštas nesukonfigūruotas:",
@@ -741,7 +741,7 @@
       "retrievingGear": "Jūsų Strava įranga gaunama fone…",
       "retrieveGearError": "Nepavyko pradėti gauti Strava įrangos. Bandykite dar kartą.",
       "unlinkTitle": "Atjungti Strava?",
-      "unlinkBody": "Endurain nustos importuoti iš Strava. Jūsų esamos veiklos išsaugomos.",
+      "unlinkBody": "Varde nustos importuoti iš Strava. Jūsų esamos veiklos išsaugomos.",
       "unlinkSuccess": "Strava atjungta",
       "unlinkError": "Nepavyko atjungti Strava. Bandykite dar kartą."
     },
@@ -771,7 +771,7 @@
       "retrievingHealth": "Jūsų Garmin Connect sveikatos duomenys gaunami fone…",
       "retrieveHealthError": "Nepavyko pradėti gauti Garmin Connect sveikatos duomenų. Bandykite dar kartą.",
       "unlinkTitle": "Atjungti Garmin Connect?",
-      "unlinkBody": "Endurain nustos importuoti iš Garmin Connect. Jūsų esami duomenys išsaugomi.",
+      "unlinkBody": "Varde nustos importuoti iš Garmin Connect. Jūsų esami duomenys išsaugomi.",
       "unlinkSuccess": "Garmin Connect atjungta",
       "unlinkError": "Nepavyko atjungti Garmin Connect. Bandykite dar kartą."
     }

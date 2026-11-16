@@ -1,10 +1,6 @@
 {
   "repository": "Repozitorij",
-  "documentation": "Dokumentacija",
-  "mastodon": "Mastodon račun Enduraina",
-  "bluesky": "Bluesky profil Enduraina",
-  "discord": "Discord strežnik Enduraina",
-  "linkedin": "LinkedIn stran Enduraina",
   "compatibleStrava": "Združljivo s Strava",
-  "worksGarmin": "Deluje z Garmin Connect"
+  "worksGarmin": "Deluje z Garmin Connect",
+  "basedOn": "Based on Endurain © {years} João Vitória Silva and contributors"
 }

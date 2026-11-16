@@ -1,6 +1,6 @@
 {
   "title": "Keresés",
-  "subtitle": "Felhasználók, tevékenységek és felszerelések keresése az Endurainben.",
+  "subtitle": "Felhasználók, tevékenységek és felszerelések keresése az Vardeben.",
   "placeholder": "Keresés…",
   "clear": "Keresés törlése",
   "scopes": {
@@ -28,7 +28,7 @@
     "inactive": "Inaktív"
   },
   "idle": {
-    "title": "Keresés az Endurainben",
+    "title": "Keresés az Vardeben",
     "description": "Válaszd ki, mit keresel, majd kezdj el gépelni a találatokhoz."
   },
   "empty": {

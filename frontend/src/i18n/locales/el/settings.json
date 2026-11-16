@@ -357,7 +357,7 @@
     },
     "email": {
       "title": "Email",
-      "description": "Το Endurain στέλνει email επαναφοράς κωδικού και εγγραφής μέσω του διακομιστή SMTP που έχει ρυθμιστεί στο περιβάλλον.",
+      "description": "Το Varde στέλνει email επαναφοράς κωδικού και εγγραφής μέσω του διακομιστή SMTP που έχει ρυθμιστεί στο περιβάλλον.",
       "statusLoadError": "Δεν ήταν δυνατός ο έλεγχος της ρύθμισης email.",
       "configured": "Το email έχει ρυθμιστεί.",
       "notConfigured": "Το email δεν έχει ρυθμιστεί:",
@@ -741,7 +741,7 @@
       "retrievingGear": "Ανάκτηση του εξοπλισμού Strava σας στο παρασκήνιο…",
       "retrieveGearError": "Δεν ήταν δυνατή η έναρξη ανάκτησης του εξοπλισμού Strava. Παρακαλώ δοκιμάστε ξανά.",
       "unlinkTitle": "Αποσύνδεση Strava;",
-      "unlinkBody": "Το Endurain θα σταματήσει την εισαγωγή από το Strava. Οι υπάρχουσες δραστηριότητές σας διατηρούνται.",
+      "unlinkBody": "Το Varde θα σταματήσει την εισαγωγή από το Strava. Οι υπάρχουσες δραστηριότητές σας διατηρούνται.",
       "unlinkSuccess": "Το Strava αποσυνδέθηκε",
       "unlinkError": "Δεν ήταν δυνατή η αποσύνδεση του Strava. Παρακαλώ δοκιμάστε ξανά."
     },
@@ -771,7 +771,7 @@
       "retrievingHealth": "Ανάκτηση των δεδομένων υγείας Garmin Connect σας στο παρασκήνιο…",
       "retrieveHealthError": "Δεν ήταν δυνατή η έναρξη ανάκτησης των δεδομένων υγείας Garmin Connect. Παρακαλώ δοκιμάστε ξανά.",
       "unlinkTitle": "Αποσύνδεση Garmin Connect;",
-      "unlinkBody": "Το Endurain θα σταματήσει την εισαγωγή από το Garmin Connect. Τα υπάρχοντα δεδομένα σας διατηρούνται.",
+      "unlinkBody": "Το Varde θα σταματήσει την εισαγωγή από το Garmin Connect. Τα υπάρχοντα δεδομένα σας διατηρούνται.",
       "unlinkSuccess": "Το Garmin Connect αποσυνδέθηκε",
       "unlinkError": "Δεν ήταν δυνατή η αποσύνδεση του Garmin Connect. Παρακαλώ δοκιμάστε ξανά."
     }

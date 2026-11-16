@@ -1,10 +1,6 @@
 {
   "repository": "Хранилище",
-  "documentation": "Документация",
-  "mastodon": "Mastodon акаунт на Endurain",
-  "bluesky": "Bluesky профил на Endurain",
-  "discord": "Discord сървър на Endurain",
-  "linkedin": "LinkedIn страница на Endurain",
   "compatibleStrava": "Съвместимо със Strava",
-  "worksGarmin": "Работи с Garmin Connect"
+  "worksGarmin": "Работи с Garmin Connect",
+  "basedOn": "Based on Endurain © {years} João Vitória Silva and contributors"
 }

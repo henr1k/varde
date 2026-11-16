@@ -1,5 +1,5 @@
 {
-  "logoAlt": "Endurain logotips",
+  "logoAlt": "Varde logotips",
   "notFound": {
     "title": "Lapa nav atrasta",
     "message": "Meklētā lapa neeksistē vai ir pārvietota",
@@ -13,9 +13,9 @@
   },
   "configError": {
     "title": "Konfigurācijas kļūda",
-    "message": "Lietotne nevarēja sasniegt Endurain aizmugursistēmu. To parasti izraisa trūkstošs vai nepareizi konfigurēts ENDURAIN_HOST vides mainīgais vai tas, ka aizmugursistēma nedarbojas.",
+    "message": "Lietotne nevarēja sasniegt Varde aizmugursistēmu. To parasti izraisa trūkstošs vai nepareizi konfigurēts ENDURAIN_HOST vides mainīgais vai tas, ka aizmugursistēma nedarbojas.",
     "notSet": "(nav iestatīts)",
-    "help": "Pārbaudiet, vai ENDURAIN_HOST norāda uz URL, kurā ir sasniedzama jūsu Endurain instance (piemēram, https://endurain.example.com) un vai aizmugursistēma darbojas, pēc tam pārlādējiet lapu.",
+    "help": "Pārbaudiet, vai ENDURAIN_HOST norāda uz URL, kurā ir sasniedzama jūsu Varde instance (piemēram, https://endurain.example.com) un vai aizmugursistēma darbojas, pēc tam pārlādējiet lapu.",
     "reload": "Pārlādēt"
   },
   "dismiss": "Aizvērt",

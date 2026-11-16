@@ -48,7 +48,7 @@
   "ssoAutoCreateDisabled": "Automatsko kreiranje naloga je onemogućeno",
   "ssoErrorUndefined": "Jedinstvena prijava nije uspela",
   "noLoginMethods": "Nijedan način prijave nije omogućen na ovom serveru",
-  "imageAlt": "Endurain ilustracija za prijavu",
+  "imageAlt": "Varde ilustracija za prijavu",
   "tagline1": "Prati svaki pokret",
   "tagline2": "Poseduj svaki trenutak"
 }

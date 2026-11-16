@@ -48,7 +48,7 @@
   "ssoAutoCreateDisabled": "Automaattinen tilin luonti on poistettu käytöstä",
   "ssoErrorUndefined": "Kertakirjautuminen epäonnistui",
   "noLoginMethods": "Tällä palvelimella ei ole käytössä kirjautumistapoja",
-  "imageAlt": "Endurainin kirjautumiskuvitus",
+  "imageAlt": "Vardein kirjautumiskuvitus",
   "tagline1": "Seuraa jokaista liikettä",
   "tagline2": "Omista jokainen hetki"
 }

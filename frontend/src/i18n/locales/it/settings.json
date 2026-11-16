@@ -357,7 +357,7 @@
     },
     "email": {
       "title": "E-mail",
-      "description": "Endurain invia le e-mail di reimpostazione della password e di registrazione tramite il server SMTP configurato nell'ambiente.",
+      "description": "Varde invia le e-mail di reimpostazione della password e di registrazione tramite il server SMTP configurato nell'ambiente.",
       "statusLoadError": "Impossibile verificare la configurazione dell'e-mail.",
       "configured": "L'e-mail è configurata.",
       "notConfigured": "L'e-mail non è configurata:",
@@ -741,7 +741,7 @@
       "retrievingGear": "Recupero dell'attrezzatura Strava in background…",
       "retrieveGearError": "Impossibile avviare il recupero dell'attrezzatura Strava. Riprova.",
       "unlinkTitle": "Disconnettere Strava?",
-      "unlinkBody": "Endurain smetterà di importare da Strava. Le attività esistenti vengono mantenute.",
+      "unlinkBody": "Varde smetterà di importare da Strava. Le attività esistenti vengono mantenute.",
       "unlinkSuccess": "Strava disconnessa",
       "unlinkError": "Impossibile disconnettere Strava. Riprova."
     },
@@ -771,7 +771,7 @@
       "retrievingHealth": "Recupero dei dati sulla salute Garmin Connect in background…",
       "retrieveHealthError": "Impossibile avviare il recupero dei dati sulla salute Garmin Connect. Riprova.",
       "unlinkTitle": "Disconnettere Garmin Connect?",
-      "unlinkBody": "Endurain smetterà di importare da Garmin Connect. I dati esistenti vengono mantenuti.",
+      "unlinkBody": "Varde smetterà di importare da Garmin Connect. I dati esistenti vengono mantenuti.",
       "unlinkSuccess": "Garmin Connect disconnesso",
       "unlinkError": "Impossibile disconnettere Garmin Connect. Riprova."
     }

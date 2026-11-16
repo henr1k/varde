@@ -1,6 +1,6 @@
 {
   "title": "Buscar",
-  "subtitle": "Atopa usuarios, actividades e equipamento en Endurain.",
+  "subtitle": "Atopa usuarios, actividades e equipamento en Varde.",
   "placeholder": "Buscar…",
   "clear": "Limpar busca",
   "scopes": {
@@ -28,7 +28,7 @@
     "inactive": "Inactivo"
   },
   "idle": {
-    "title": "Buscar en Endurain",
+    "title": "Buscar en Varde",
     "description": "Escolle o que queres buscar e comeza a escribir para ver resultados."
   },
   "empty": {

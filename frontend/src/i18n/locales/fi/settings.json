@@ -357,7 +357,7 @@
     },
     "email": {
       "title": "Sähköposti",
-      "description": "Endurain lähettää salasanan palautus- ja rekisteröitymisviestit ympäristössä määritetyn SMTP-palvelimen kautta.",
+      "description": "Varde lähettää salasanan palautus- ja rekisteröitymisviestit ympäristössä määritetyn SMTP-palvelimen kautta.",
       "statusLoadError": "Sähköpostin määrityksiä ei voitu tarkistaa.",
       "configured": "Sähköposti on määritetty.",
       "notConfigured": "Sähköpostia ei ole määritetty:",
@@ -741,7 +741,7 @@
       "retrievingGear": "Haetaan Strava-varusteitasi taustalla…",
       "retrieveGearError": "Strava-varusteiden hakemista ei voitu aloittaa. Yritä uudelleen.",
       "unlinkTitle": "Katkaistaanko Strava-yhteys?",
-      "unlinkBody": "Endurain lopettaa tuonnin Stravasta. Olemassa olevat aktiviteettisi säilytetään.",
+      "unlinkBody": "Varde lopettaa tuonnin Stravasta. Olemassa olevat aktiviteettisi säilytetään.",
       "unlinkSuccess": "Strava-yhteys katkaistu",
       "unlinkError": "Strava-yhteyttä ei voitu katkaista. Yritä uudelleen."
     },
@@ -771,7 +771,7 @@
       "retrievingHealth": "Haetaan Garmin Connect -terveystietojasi taustalla…",
       "retrieveHealthError": "Garmin Connect -terveystietojen hakemista ei voitu aloittaa. Yritä uudelleen.",
       "unlinkTitle": "Katkaistaanko Garmin Connect -yhteys?",
-      "unlinkBody": "Endurain lopettaa tuonnin Garmin Connectista. Olemassa olevat tietosi säilytetään.",
+      "unlinkBody": "Varde lopettaa tuonnin Garmin Connectista. Olemassa olevat tietosi säilytetään.",
       "unlinkSuccess": "Garmin Connect -yhteys katkaistu",
       "unlinkError": "Garmin Connect -yhteyttä ei voitu katkaista. Yritä uudelleen."
     }

@@ -1,10 +1,6 @@
 {
   "repository": "Repozitorijs",
-  "documentation": "Dokumentācija",
-  "mastodon": "Endurain Mastodon konts",
-  "bluesky": "Endurain Bluesky profils",
-  "discord": "Endurain Discord serveris",
-  "linkedin": "Endurain LinkedIn lapa",
   "compatibleStrava": "Saderīgs ar Strava",
-  "worksGarmin": "Darbojas ar Garmin Connect"
+  "worksGarmin": "Darbojas ar Garmin Connect",
+  "basedOn": "Based on Endurain © {years} João Vitória Silva and contributors"
 }

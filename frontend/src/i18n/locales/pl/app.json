@@ -1,5 +1,5 @@
 {
-  "logoAlt": "Logo Endurain",
+  "logoAlt": "Logo Varde",
   "notFound": {
     "title": "Nie znaleziono strony",
     "message": "Strona, której szukasz, nie istnieje lub została przeniesiona",
@@ -13,9 +13,9 @@
   },
   "configError": {
     "title": "Błąd konfiguracji",
-    "message": "Aplikacja nie mogła połączyć się z zapleczem Endurain. Zwykle jest to spowodowane brakującą lub błędnie skonfigurowaną zmienną środowiskową ENDURAIN_HOST albo niedziałającym zapleczem.",
+    "message": "Aplikacja nie mogła połączyć się z zapleczem Varde. Zwykle jest to spowodowane brakującą lub błędnie skonfigurowaną zmienną środowiskową ENDURAIN_HOST albo niedziałającym zapleczem.",
     "notSet": "(nie ustawiono)",
-    "help": "Sprawdź, czy ENDURAIN_HOST wskazuje adres URL, pod którym dostępna jest Twoja instancja Endurain (na przykład https://endurain.example.com), oraz czy zaplecze działa, a następnie odśwież stronę.",
+    "help": "Sprawdź, czy ENDURAIN_HOST wskazuje adres URL, pod którym dostępna jest Twoja instancja Varde (na przykład https://endurain.example.com), oraz czy zaplecze działa, a następnie odśwież stronę.",
     "reload": "Odśwież"
   },
   "dismiss": "Odrzuć",

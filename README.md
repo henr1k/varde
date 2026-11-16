@@ -1,90 +1,53 @@
-> [!NOTE]
-> **Endurain is on a temporary feature freeze** - The project is not paused. The focus is shifting from new features to strengthening the foundations. More details [here](https://docs.endurain.com/blog/2026/05/23/pausing-new-features-so-endurain-can-keep-growing/)
-
 <div align="center">
-  <img src="logo/brand_logo_dark_theme.png" width="128" height="128">
+  <img src="logo/brand_full_logo_light_theme.svg" width="360" alt="Varde">
 
-  # Endurain
-
-  <a href="https://translate.codeberg.org/engage/endurain/"><img src="https://translate.codeberg.org/widget/endurain/svg-badge.svg" alt="Translation status"></a>
-  [![License](https://img.shields.io/badge/license-AGPL%20v3-blue)](./LICENSE)
-  [![Release](https://img.shields.io/github/v/release/endurain-project/endurain?label=release&color=blue)](https://github.com/endurain-project/endurain/releases)
-  [![Stars](https://img.shields.io/github/stars/endurain-project/endurain?label=stars&logo=github)](https://github.com/endurain-project/endurain)
-  [![Trademark Policy](https://img.shields.io/badge/trademark-Endurain%E2%84%A2-blue)](./TRADEMARK.md)
-
-  **A self-hosted fitness tracking service**  
-  Visit Endurain's [Mastodon profile](https://fosstodon.org/@endurain), [Bluesky profile](https://bsky.app/profile/endurain.bsky.social), [Discord server](https://discord.gg/6VUjUq2uZR) and [LinkedIn page](https://www.linkedin.com/company/endurain).
-
-  <img src="screenshot_01.png" alt="Endurain Screenshot">
+  **A self-hosted training app with an AI running coach.**
 </div>
 
-## 🚀 Try the Demo
+Varde is a self-hosted fitness tracker for you and your family: activities, sleep and health data from
+Garmin Connect or Strava (or uploaded `.fit`, `.gpx` and `.tcx` files), plus a coach that keeps a
+14-day training plan up to date from that data.
 
-Experience Endurain without installation:
+A *varde* is the stone cairn that marks the route on a Norwegian mountain trail.
 
-**Demo URL:** [https://demo.endurain.com](https://demo.endurain.com)
+## Based on Endurain
 
-- **Username:** `admin`
-- **Password:** `admin`
-- **Reset Schedule:** Daily at midnight (Europe/Lisbon timezone)
+Varde is a modified version of [Endurain](https://github.com/endurain-project/endurain), © 2023–2026
+João Vitória Silva and contributors, licensed under the AGPL-3.0. Varde is not affiliated with or
+endorsed by the Endurain project, and it does not use the Endurain name or logo for its own branding.
+Everything Endurain does, Varde does; see the [Endurain documentation](https://docs.endurain.com) for
+setup and configuration. Environment variables keep their Endurain names (`ENDURAIN_HOST`, …).
 
-> ⚠️ **Note:** The demo environment resets every day. Do not store important data.
+What Varde adds:
 
-## Table of Contents
+- **AI coach** (`backend/app/modules/coach`, `frontend/src/features/coach`): reads your activities,
+  laps, sleep, resting heart rate, notes and goals; writes a 14-day plan, today's session, an
+  assessment and goal predictions; updates after every new activity and each morning.
+- **Device-neutral workouts**: every planned session carries structured steps (warm-up, repeats,
+  pace/heart-rate/effort targets) ready for watch adapters.
+- **Your model, your key**: each user picks the provider and model (Anthropic, or any OpenAI-compatible
+  server such as OpenAI, OpenRouter, Mistral or a local Ollama) and can use their own API key, stored
+  encrypted.
 
-- [Endurain documentation](https://docs.endurain.com)
-- [What is Endurain?](#what-is-endurain)
-- [Endurain screenshots](https://docs.endurain.com/gallery/)
-- [Sponsors](#sponsors)
-- [Contributing](#contributing)
-- [Help Translate](#help-translate)
-- [License](#license)
+## Running it
 
-## What is Endurain?
+```bash
+cp docker-compose.yml.example docker-compose.yml
+cp .env.example .env   # set passwords, keys, ENDURAIN_HOST, and optionally ANTHROPIC_API_KEY
+docker compose up -d
+```
 
-Endurain is a self-hosted fitness tracking service designed to give users full control over their data and hosting environment. It's similar to Strava but focused on privacy and customization. Built with:
+The image is `ghcr.io/henr1k/varde` (`latest`, `vX.Y.Z`, `sha-<commit>`), built for amd64 by
+`.github/workflows/varde-image.yml` after the backend and frontend checks pass.
 
-- **Frontend:** Vue.js 3 with TypeScript, Tailwind CSS and shadcn-vue components, with Pinia and TanStack Query for state management
-- **Backend:** Python FastAPI, Alembic, SQLAlchemy, stravalib and python-garminconnect for Strava and Garmin Connect integration, gpxpy, tcxreader and fitdecode for .gpx, .tcx and .fit file import respectively
-- **Database:** PostgreSQL for efficient data management
-- **Integrations:** Supports Strava and Garmin Connect. Manual upload of activities using .gpx, .tcx and .fit files are also supported
+## Updating from Endurain
 
-To deploy Endurain, a Docker image is available, and a comprehensive example can be found in the "docker-compose.yml.example" file provided. Configuration is facilitated through environment variables, ensuring flexibility and ease of customization.
-
-For more information please see the Endurain's [documentation](https://docs.endurain.com).
-
-## Sponsors
-
-A huge thank you to the project sponsors! Your support helps keep this project going.
-
-Support Endurain's development on:
-
-- [Buy Me a Coffee](https://buymeacoffee.com/endurain)
-- [liberapay](https://liberapay.com/endurain/)
-- [Patreon](https://patreon.com/u84745218)
-- [GitHub Sponsors using archived repo](https://github.com/endurain-project/endurain)
-
-## Contributing
-
-Contributions are welcomed! Please open an issue to discuss any changes or improvements before submitting a PR. Check out the [Contributing Guidelines](CONTRIBUTING.md) for more details.
-
-## Help Translate
-
-Endurain has multi-language support, and you can help translate it into more languages via [Codeberg Translate](https://translate.codeberg.org/projects/endurain/). 
+`upstream` is Endurain. Merge `upstream/master` into a branch, open a pull request, and let CI run.
+Expected conflicts: the version numbers (`API_VERSION`, `frontend/package.json`; keep Varde's) and the
+brand assets. If the merge adds an upstream migration, the newest coach migration's `down_revision`
+must be pointed at the new upstream head (a test fails until it is).
 
 ## License
 
-This project is licensed under the AGPL-3.0 License - see the [LICENSE](LICENSE) file for details.
-
-## Trademark Notice
-
-Endurain® is a trademark of João Vitória Silva.  
-
-You are welcome to self-host Endurain and use the name and logo, including for personal, educational, research, or community (non-commercial) use.  
-Commercial use of the Endurain name or logos (such as offering paid hosting, products, or services) is **not permitted without prior written permission**.
-
-See [`TRADEMARK.md`](./TRADEMARK.md) for full details.
-
-<div align="center">
-  <sub>Built with ❤️ from Portugal | Part of the <a href="https://github.com/endurain-project">Endurain</a> ecosystem</sub>
-</div>
+AGPL-3.0, see [LICENSE](LICENSE). If you run a modified Varde for others, you must offer them its
+source code.

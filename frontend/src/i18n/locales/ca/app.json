@@ -1,5 +1,5 @@
 {
-  "logoAlt": "Endurain logo",
+  "logoAlt": "Varde logo",
   "notFound": {
     "title": "Pàgina no trobada",
     "message": "La pàgina que cerques no existeix o s'ha mogut",
@@ -13,9 +13,9 @@
   },
   "configError": {
     "title": "Error de configuració",
-    "message": "L'aplicació no s'ha pogut connectar al backend d'Endurain. Això sol ser causat per una variable d'entorn ENDURAIN_HOST absent o mal configurada, o perquè el backend no s'està executant.",
+    "message": "L'aplicació no s'ha pogut connectar al backend d'Varde. Això sol ser causat per una variable d'entorn ENDURAIN_HOST absent o mal configurada, o perquè el backend no s'està executant.",
     "notSet": "(sense definir)",
-    "help": "Comprova que ENDURAIN_HOST apunta a l'URL on la teva instància d'Endurain és accessible (per exemple https://endurain.example.com) i que el backend s'està executant; després, torna a carregar la pàgina.",
+    "help": "Comprova que ENDURAIN_HOST apunta a l'URL on la teva instància d'Varde és accessible (per exemple https://endurain.example.com) i que el backend s'està executant; després, torna a carregar la pàgina.",
     "reload": "Torna a carregar"
   },
   "dismiss": "Descarta",

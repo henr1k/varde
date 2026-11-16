@@ -1,5 +1,5 @@
 {
-  "logoAlt": "Endurain-logo",
+  "logoAlt": "Varde-logo",
   "notFound": {
     "title": "Sivua ei löytynyt",
     "message": "Etsimääsi sivua ei ole olemassa tai se on siirretty",
@@ -13,9 +13,9 @@
   },
   "configError": {
     "title": "Määritysvirhe",
-    "message": "Sovellus ei saanut yhteyttä Endurainin taustapalveluun. Tämä johtuu yleensä puuttuvasta tai väärin määritetystä ENDURAIN_HOST-ympäristömuuttujasta tai siitä, ettei taustapalvelu ole käynnissä.",
+    "message": "Sovellus ei saanut yhteyttä Vardein taustapalveluun. Tämä johtuu yleensä puuttuvasta tai väärin määritetystä ENDURAIN_HOST-ympäristömuuttujasta tai siitä, ettei taustapalvelu ole käynnissä.",
     "notSet": "(ei asetettu)",
-    "help": "Tarkista, että ENDURAIN_HOST osoittaa osoitteeseen, josta Endurain-instanssisi on tavoitettavissa (esimerkiksi https://endurain.example.com) ja että taustapalvelu on käynnissä, ja lataa sitten sivu uudelleen.",
+    "help": "Tarkista, että ENDURAIN_HOST osoittaa osoitteeseen, josta Varde-instanssisi on tavoitettavissa (esimerkiksi https://endurain.example.com) ja että taustapalvelu on käynnissä, ja lataa sitten sivu uudelleen.",
     "reload": "Lataa uudelleen"
   },
   "dismiss": "Hylkää",

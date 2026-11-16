@@ -48,7 +48,7 @@
   "ssoAutoCreateDisabled": "Az automatikus fióklétrehozás le van tiltva",
   "ssoErrorUndefined": "Az egyszeri bejelentkezés sikertelen",
   "noLoginMethods": "Ezen a kiszolgálón nincs engedélyezett bejelentkezési mód",
-  "imageAlt": "Endurain bejelentkezési illusztráció",
+  "imageAlt": "Varde bejelentkezési illusztráció",
   "tagline1": "Kövess minden mozdulatot",
   "tagline2": "Birtokold minden pillanatod"
 }

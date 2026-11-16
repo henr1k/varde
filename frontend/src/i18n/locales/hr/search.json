@@ -1,6 +1,6 @@
 {
   "title": "Pretraživanje",
-  "subtitle": "Pronađite korisnike, aktivnosti i opremu kroz Endurain.",
+  "subtitle": "Pronađite korisnike, aktivnosti i opremu kroz Varde.",
   "placeholder": "Pretraži…",
   "clear": "Očisti pretraživanje",
   "scopes": {
@@ -28,7 +28,7 @@
     "inactive": "Neaktivno"
   },
   "idle": {
-    "title": "Pretraži Endurain",
+    "title": "Pretraži Varde",
     "description": "Odaberite što tražite, zatim počnite tipkati za prikaz podudaranja."
   },
   "empty": {

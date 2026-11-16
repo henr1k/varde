@@ -357,7 +357,7 @@
     },
     "email": {
       "title": "E-post",
-      "description": "Endurain saadab parooli lähtestamise ja registreerimise e-kirjad keskkonnas seadistatud SMTP-serveri kaudu.",
+      "description": "Varde saadab parooli lähtestamise ja registreerimise e-kirjad keskkonnas seadistatud SMTP-serveri kaudu.",
       "statusLoadError": "E-posti seadistust ei õnnestunud kontrollida.",
       "configured": "E-post on seadistatud.",
       "notConfigured": "E-post ei ole seadistatud:",
@@ -741,7 +741,7 @@
       "retrievingGear": "Sinu Strava varustuse hankimine taustal…",
       "retrieveGearError": "Strava varustuse hankimist ei õnnestunud alustada. Palun proovi uuesti.",
       "unlinkTitle": "Kas katkestada Strava ühendus?",
-      "unlinkBody": "Endurain lõpetab Stravast importimise. Sinu olemasolevad tegevused jäävad alles.",
+      "unlinkBody": "Varde lõpetab Stravast importimise. Sinu olemasolevad tegevused jäävad alles.",
       "unlinkSuccess": "Strava ühendus katkestatud",
       "unlinkError": "Strava ühendust ei õnnestunud katkestada. Palun proovi uuesti."
     },
@@ -771,7 +771,7 @@
       "retrievingHealth": "Sinu Garmin Connecti terviseandmete hankimine taustal…",
       "retrieveHealthError": "Garmin Connecti terviseandmete hankimist ei õnnestunud alustada. Palun proovi uuesti.",
       "unlinkTitle": "Kas katkestada Garmin Connecti ühendus?",
-      "unlinkBody": "Endurain lõpetab Garmin Connectist importimise. Sinu olemasolevad andmed jäävad alles.",
+      "unlinkBody": "Varde lõpetab Garmin Connectist importimise. Sinu olemasolevad andmed jäävad alles.",
       "unlinkSuccess": "Garmin Connecti ühendus katkestatud",
       "unlinkError": "Garmin Connecti ühendust ei õnnestunud katkestada. Palun proovi uuesti."
     }

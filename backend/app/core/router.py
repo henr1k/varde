@@ -63,7 +63,7 @@ async def about() -> AboutResponse:
         API name, version, and license details.
     """
     return AboutResponse(
-        name="Endurain API",
+        name="Varde API",
         version=core_config.API_VERSION,
         license=LicenseInfo(
             name=core_config.LICENSE_NAME,

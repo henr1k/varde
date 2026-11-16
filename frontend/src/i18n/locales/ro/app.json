@@ -1,5 +1,5 @@
 {
-  "logoAlt": "Logo Endurain",
+  "logoAlt": "Logo Varde",
   "notFound": {
     "title": "Pagina nu a fost găsită",
     "message": "Pagina pe care o cauți nu există sau a fost mutată",
@@ -13,9 +13,9 @@
   },
   "configError": {
     "title": "Eroare de configurare",
-    "message": "Aplicația nu a putut contacta backendul Endurain. Acest lucru este cauzat de obicei de o variabilă de mediu ENDURAIN_HOST lipsă sau configurată greșit, ori de backendul care nu rulează.",
+    "message": "Aplicația nu a putut contacta backendul Varde. Acest lucru este cauzat de obicei de o variabilă de mediu ENDURAIN_HOST lipsă sau configurată greșit, ori de backendul care nu rulează.",
     "notSet": "(nesetat)",
-    "help": "Verifică dacă ENDURAIN_HOST indică URL-ul la care instanța ta Endurain este accesibilă (de exemplu https://endurain.example.com) și dacă backendul rulează, apoi reîncarcă pagina.",
+    "help": "Verifică dacă ENDURAIN_HOST indică URL-ul la care instanța ta Varde este accesibilă (de exemplu https://endurain.example.com) și dacă backendul rulează, apoi reîncarcă pagina.",
     "reload": "Reîncarcă"
   },
   "dismiss": "Închide",

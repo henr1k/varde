@@ -1,10 +1,6 @@
 {
   "repository": "Repositoorium",
-  "documentation": "Dokumentatsioon",
-  "mastodon": "Enduraini Mastodoni konto",
-  "bluesky": "Enduraini Blueskyi profiil",
-  "discord": "Enduraini Discordi server",
-  "linkedin": "Enduraini LinkedIni leht",
   "compatibleStrava": "Ühildub Stravaga",
-  "worksGarmin": "Töötab Garmin Connectiga"
+  "worksGarmin": "Töötab Garmin Connectiga",
+  "basedOn": "Based on Endurain © {years} João Vitória Silva and contributors"
 }

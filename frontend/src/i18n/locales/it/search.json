@@ -1,6 +1,6 @@
 {
   "title": "Ricerca",
-  "subtitle": "Trova utenti, attività e attrezzatura su Endurain.",
+  "subtitle": "Trova utenti, attività e attrezzatura su Varde.",
   "placeholder": "Cerca…",
   "clear": "Cancella ricerca",
   "scopes": {
@@ -28,7 +28,7 @@
     "inactive": "Inattivo"
   },
   "idle": {
-    "title": "Cerca su Endurain",
+    "title": "Cerca su Varde",
     "description": "Scegli cosa cercare, poi inizia a digitare per vedere i risultati."
   },
   "empty": {

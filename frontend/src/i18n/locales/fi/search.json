@@ -1,6 +1,6 @@
 {
   "title": "Haku",
-  "subtitle": "Etsi käyttäjiä, aktiviteetteja ja varusteita Endurainista.",
+  "subtitle": "Etsi käyttäjiä, aktiviteetteja ja varusteita Vardeista.",
   "placeholder": "Hae…",
   "clear": "Tyhjennä haku",
   "scopes": {
@@ -28,7 +28,7 @@
     "inactive": "Ei käytössä"
   },
   "idle": {
-    "title": "Hae Endurainista",
+    "title": "Hae Vardeista",
     "description": "Valitse mitä etsit ja ala kirjoittaa nähdäksesi osumat."
   },
   "empty": {

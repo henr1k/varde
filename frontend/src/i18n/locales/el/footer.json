@@ -1,10 +1,6 @@
 {
   "repository": "Αποθετήριο",
-  "documentation": "Τεκμηρίωση",
-  "mastodon": "Λογαριασμός Mastodon του Endurain",
-  "bluesky": "Προφίλ Bluesky του Endurain",
-  "discord": "Διακομιστής Discord του Endurain",
-  "linkedin": "Σελίδα LinkedIn του Endurain",
   "compatibleStrava": "Συμβατό με το Strava",
-  "worksGarmin": "Λειτουργεί με το Garmin Connect"
+  "worksGarmin": "Λειτουργεί με το Garmin Connect",
+  "basedOn": "Based on Endurain © {years} João Vitória Silva and contributors"
 }

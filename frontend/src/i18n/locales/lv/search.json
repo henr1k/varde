@@ -1,6 +1,6 @@
 {
   "title": "Meklēt",
-  "subtitle": "Atrodiet lietotājus, aktivitātes un inventāru visā Endurain.",
+  "subtitle": "Atrodiet lietotājus, aktivitātes un inventāru visā Varde.",
   "placeholder": "Meklēt…",
   "clear": "Notīrīt meklēšanu",
   "scopes": {
@@ -28,7 +28,7 @@
     "inactive": "Neaktīvs"
   },
   "idle": {
-    "title": "Meklēt Endurain",
+    "title": "Meklēt Varde",
     "description": "Izvēlieties, ko meklēt, pēc tam sāciet rakstīt, lai redzētu atbilstības."
   },
   "empty": {

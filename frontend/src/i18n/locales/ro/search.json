@@ -1,6 +1,6 @@
 {
   "title": "Căutare",
-  "subtitle": "Găsește utilizatori, activități și echipament în Endurain.",
+  "subtitle": "Găsește utilizatori, activități și echipament în Varde.",
   "placeholder": "Caută…",
   "clear": "Șterge căutarea",
   "scopes": {
@@ -28,7 +28,7 @@
     "inactive": "Inactiv"
   },
   "idle": {
-    "title": "Caută în Endurain",
+    "title": "Caută în Varde",
     "description": "Alege ce să cauți, apoi începe să scrii pentru a vedea rezultatele."
   },
   "empty": {

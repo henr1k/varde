@@ -48,7 +48,7 @@
   "ssoAutoCreateDisabled": "Automatisch aanmaken van accounts is uitgeschakeld",
   "ssoErrorUndefined": "Eenmalig aanmelden mislukt",
   "noLoginMethods": "Er zijn geen inlogmethoden ingeschakeld op deze server",
-  "imageAlt": "Endurain inlog-illustratie",
+  "imageAlt": "Varde inlog-illustratie",
   "tagline1": "Registreer elke beweging",
   "tagline2": "Bezit elk moment"
 }

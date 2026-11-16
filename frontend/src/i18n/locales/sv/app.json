@@ -1,5 +1,5 @@
 {
-  "logoAlt": "Endurain logotyp",
+  "logoAlt": "Varde logotyp",
   "notFound": {
     "title": "Sidan hittades inte",
     "message": "Sidan du söker finns inte eller har flyttats",
@@ -13,9 +13,9 @@
   },
   "configError": {
     "title": "Konfigurationsfel",
-    "message": "Appen kunde inte nå Endurain-backend. Detta beror oftast på en saknad eller felkonfigurerad miljövariabel ENDURAIN_HOST, eller på att backend inte körs.",
+    "message": "Appen kunde inte nå Varde-backend. Detta beror oftast på en saknad eller felkonfigurerad miljövariabel ENDURAIN_HOST, eller på att backend inte körs.",
     "notSet": "(inte angivet)",
-    "help": "Kontrollera att ENDURAIN_HOST pekar på den URL där din Endurain-instans är nåbar (till exempel https://endurain.example.com) och att backend körs, och ladda sedan om sidan.",
+    "help": "Kontrollera att ENDURAIN_HOST pekar på den URL där din Varde-instans är nåbar (till exempel https://endurain.example.com) och att backend körs, och ladda sedan om sidan.",
     "reload": "Ladda om"
   },
   "dismiss": "Stäng",

@@ -1,6 +1,6 @@
 {
   "title": "Szukaj",
-  "subtitle": "Znajdź użytkowników, aktywności i sprzęt w całym Endurain.",
+  "subtitle": "Znajdź użytkowników, aktywności i sprzęt w całym Varde.",
   "placeholder": "Szukaj…",
   "clear": "Wyczyść wyszukiwanie",
   "scopes": {
@@ -28,7 +28,7 @@
     "inactive": "Nieaktywny"
   },
   "idle": {
-    "title": "Przeszukaj Endurain",
+    "title": "Przeszukaj Varde",
     "description": "Wybierz, czego szukać, a następnie zacznij pisać, aby zobaczyć dopasowania."
   },
   "empty": {

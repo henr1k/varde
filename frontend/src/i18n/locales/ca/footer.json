@@ -1,10 +1,6 @@
 {
   "repository": "Repositori",
-  "documentation": "Documentació",
-  "mastodon": "Compte de Mastodon d'Endurain",
-  "bluesky": "Perfil de Bluesky d'Endurain",
-  "discord": "Servidor de Discord d'Endurain",
-  "linkedin": "Pàgina de LinkedIn d'Endurain",
   "compatibleStrava": "Compatible amb Strava",
-  "worksGarmin": "Funciona amb Garmin Connect"
+  "worksGarmin": "Funciona amb Garmin Connect",
+  "basedOn": "Based on Endurain © {years} João Vitória Silva and contributors"
 }

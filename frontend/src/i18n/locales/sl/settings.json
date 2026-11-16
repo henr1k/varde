@@ -357,7 +357,7 @@
     },
     "email": {
       "title": "E-pošta",
-      "description": "Endurain pošilja e-pošto za ponastavitev gesla in registracijo prek strežnika SMTP, nastavljenega v okolju.",
+      "description": "Varde pošilja e-pošto za ponastavitev gesla in registracijo prek strežnika SMTP, nastavljenega v okolju.",
       "statusLoadError": "Nastavitve e-pošte ni bilo mogoče preveriti.",
       "configured": "E-pošta je nastavljena.",
       "notConfigured": "E-pošta ni nastavljena:",
@@ -741,7 +741,7 @@
       "retrievingGear": "Pridobivanje Strava opreme v ozadju…",
       "retrieveGearError": "Pridobivanja Strava opreme ni bilo mogoče začeti. Prosim, poskusi znova.",
       "unlinkTitle": "Odklopi Strava?",
-      "unlinkBody": "Endurain bo prenehal uvažati iz Strave. Obstoječe aktivnosti so ohranjene.",
+      "unlinkBody": "Varde bo prenehal uvažati iz Strave. Obstoječe aktivnosti so ohranjene.",
       "unlinkSuccess": "Strava odklopljena",
       "unlinkError": "Strave ni bilo mogoče odklopiti. Prosim, poskusi znova."
     },
@@ -771,7 +771,7 @@
       "retrievingHealth": "Pridobivanje Garmin Connect zdravstvenih podatkov v ozadju…",
       "retrieveHealthError": "Pridobivanja Garmin Connect zdravstvenih podatkov ni bilo mogoče začeti. Prosim, poskusi znova.",
       "unlinkTitle": "Odklopi Garmin Connect?",
-      "unlinkBody": "Endurain bo prenehal uvažati iz Garmin Connect. Obstoječi podatki so ohranjeni.",
+      "unlinkBody": "Varde bo prenehal uvažati iz Garmin Connect. Obstoječi podatki so ohranjeni.",
       "unlinkSuccess": "Garmin Connect odklopljen",
       "unlinkError": "Garmin Connect ni bilo mogoče odklopiti. Prosim, poskusi znova."
     }

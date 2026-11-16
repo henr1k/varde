@@ -1,5 +1,5 @@
 {
-  "logoAlt": "Logo Endurain",
+  "logoAlt": "Logo Varde",
   "notFound": {
     "title": "Stránka nenalezena",
     "message": "Stránka, kterou hledáte, neexistuje nebo byla přesunuta",
@@ -13,9 +13,9 @@
   },
   "configError": {
     "title": "Chyba konfigurace",
-    "message": "Aplikace se nemohla připojit k backendu Endurain. To je obvykle způsobeno chybějící nebo špatně nastavenou proměnnou prostředí ENDURAIN_HOST nebo tím, že backend neběží.",
+    "message": "Aplikace se nemohla připojit k backendu Varde. To je obvykle způsobeno chybějící nebo špatně nastavenou proměnnou prostředí ENDURAIN_HOST nebo tím, že backend neběží.",
     "notSet": "(nenastaveno)",
-    "help": "Zkontrolujte, že ENDURAIN_HOST odkazuje na URL, kde je vaše instance Endurain dostupná (například https://endurain.example.com), a že backend běží, poté stránku znovu načtěte.",
+    "help": "Zkontrolujte, že ENDURAIN_HOST odkazuje na URL, kde je vaše instance Varde dostupná (například https://endurain.example.com), a že backend běží, poté stránku znovu načtěte.",
     "reload": "Znovu načíst"
   },
   "dismiss": "Zavřít",

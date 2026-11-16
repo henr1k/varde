@@ -36,7 +36,7 @@
   "errorTooManyAttempts": "Pārāk daudz mēģinājumu. Lūdzu, uzgaidiet pirms mēģināt vēlreiz.",
   "errorGeneral": "Reģistrācija neizdevās. Lūdzu, mēģiniet vēlreiz.",
   "signupDisabled": "Reģistrācija šajā serverī nav iespējota",
-  "imageAlt": "Endurain reģistrācijas ilustrācija",
+  "imageAlt": "Varde reģistrācijas ilustrācija",
   "unitCm": "cm",
   "unitFeet": "ft",
   "unitInches": "in",

@@ -357,7 +357,7 @@
     },
     "email": {
       "title": "E-mail",
-      "description": "Az Endurain a jelszó-visszaállítási és regisztrációs e-maileket a környezetben beállított SMTP-szerveren keresztül küldi.",
+      "description": "Az Varde a jelszó-visszaállítási és regisztrációs e-maileket a környezetben beállított SMTP-szerveren keresztül küldi.",
       "statusLoadError": "Az e-mail-beállítást nem sikerült ellenőrizni.",
       "configured": "Az e-mail be van állítva.",
       "notConfigured": "Az e-mail nincs beállítva:",
@@ -741,7 +741,7 @@
       "retrievingGear": "A Strava-felszerelésed lekérése a háttérben…",
       "retrieveGearError": "Nem sikerült elindítani a Strava-felszerelés lekérését. Kérjük, próbáld újra.",
       "unlinkTitle": "Lecsatlakoztatod a Strava szolgáltatást?",
-      "unlinkBody": "Az Endurain leállítja az importálást a Strava szolgáltatásból. A meglévő tevékenységeid megmaradnak.",
+      "unlinkBody": "Az Varde leállítja az importálást a Strava szolgáltatásból. A meglévő tevékenységeid megmaradnak.",
       "unlinkSuccess": "Strava lecsatlakoztatva",
       "unlinkError": "Nem sikerült lecsatlakoztatni a Strava szolgáltatást. Kérjük, próbáld újra."
     },
@@ -771,7 +771,7 @@
       "retrievingHealth": "A Garmin Connect-egészségügyi adataid lekérése a háttérben…",
       "retrieveHealthError": "Nem sikerült elindítani a Garmin Connect-egészségügyi adatok lekérését. Kérjük, próbáld újra.",
       "unlinkTitle": "Lecsatlakoztatod a Garmin Connectet?",
-      "unlinkBody": "Az Endurain leállítja az importálást a Garmin Connectből. A meglévő adataid megmaradnak.",
+      "unlinkBody": "Az Varde leállítja az importálást a Garmin Connectből. A meglévő adataid megmaradnak.",
       "unlinkSuccess": "Garmin Connect lecsatlakoztatva",
       "unlinkError": "Nem sikerült lecsatlakoztatni a Garmin Connectet. Kérjük, próbáld újra."
     }

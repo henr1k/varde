@@ -48,7 +48,7 @@
   "ssoAutoCreateDisabled": "Automatisk oppretting av konto er deaktivert",
   "ssoErrorUndefined": "Enkel pålogging mislyktes",
   "noLoginMethods": "Ingen innloggingsmetoder er aktivert på denne serveren",
-  "imageAlt": "Endurain innloggingsillustrasjon",
+  "imageAlt": "Varde innloggingsillustrasjon",
   "tagline1": "Spor hver bevegelse",
   "tagline2": "Eie hvert øyeblikk"
 }

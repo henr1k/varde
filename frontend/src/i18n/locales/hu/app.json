@@ -1,5 +1,5 @@
 {
-  "logoAlt": "Endurain logó",
+  "logoAlt": "Varde logó",
   "notFound": {
     "title": "Az oldal nem található",
     "message": "A keresett oldal nem létezik vagy áthelyezték",
@@ -13,9 +13,9 @@
   },
   "configError": {
     "title": "Konfigurációs hiba",
-    "message": "Az alkalmazás nem érte el az Endurain háttérrendszert. Ezt általában a hiányzó vagy hibásan beállított ENDURAIN_HOST környezeti változó okozza, vagy az, hogy a háttérrendszer nem fut.",
+    "message": "Az alkalmazás nem érte el az Varde háttérrendszert. Ezt általában a hiányzó vagy hibásan beállított ENDURAIN_HOST környezeti változó okozza, vagy az, hogy a háttérrendszer nem fut.",
     "notSet": "(nincs beállítva)",
-    "help": "Ellenőrizd, hogy az ENDURAIN_HOST arra az URL-re mutat-e, ahol az Endurain példányod elérhető (például https://endurain.example.com), és hogy a háttérrendszer fut-e, majd töltsd újra az oldalt.",
+    "help": "Ellenőrizd, hogy az ENDURAIN_HOST arra az URL-re mutat-e, ahol az Varde példányod elérhető (például https://endurain.example.com), és hogy a háttérrendszer fut-e, majd töltsd újra az oldalt.",
     "reload": "Újratöltés"
   },
   "dismiss": "Bezárás",

@@ -1,5 +1,5 @@
 {
-  "logoAlt": "Endurain logosu",
+  "logoAlt": "Varde logosu",
   "notFound": {
     "title": "Sayfa bulunamadı",
     "message": "Aradığınız sayfa mevcut değil veya taşınmış",
@@ -13,9 +13,9 @@
   },
   "configError": {
     "title": "Yapılandırma hatası",
-    "message": "Uygulama Endurain arka ucuna ulaşamadı. Bu genellikle eksik veya yanlış yapılandırılmış bir ENDURAIN_HOST ortam değişkeninden ya da arka ucun çalışmamasından kaynaklanır.",
+    "message": "Uygulama Varde arka ucuna ulaşamadı. Bu genellikle eksik veya yanlış yapılandırılmış bir ENDURAIN_HOST ortam değişkeninden ya da arka ucun çalışmamasından kaynaklanır.",
     "notSet": "(ayarlanmadı)",
-    "help": "ENDURAIN_HOST değerinin Endurain örneğinizin erişilebilir olduğu URL'yi (örneğin https://endurain.example.com) işaret ettiğini ve arka ucun çalıştığını doğrulayın, ardından sayfayı yeniden yükleyin.",
+    "help": "ENDURAIN_HOST değerinin Varde örneğinizin erişilebilir olduğu URL'yi (örneğin https://endurain.example.com) işaret ettiğini ve arka ucun çalıştığını doğrulayın, ardından sayfayı yeniden yükleyin.",
     "reload": "Yeniden yükle"
   },
   "dismiss": "Kapat",

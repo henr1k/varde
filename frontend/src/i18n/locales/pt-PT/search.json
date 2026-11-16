@@ -1,6 +1,6 @@
 {
   "title": "Pesquisar",
-  "subtitle": "Encontra utilizadores, atividades e equipamento no Endurain.",
+  "subtitle": "Encontra utilizadores, atividades e equipamento no Varde.",
   "placeholder": "Pesquisar…",
   "clear": "Limpar pesquisa",
   "scopes": {
@@ -28,7 +28,7 @@
     "inactive": "Inativo"
   },
   "idle": {
-    "title": "Pesquisar no Endurain",
+    "title": "Pesquisar no Varde",
     "description": "Escolhe o que procuras e começa a escrever para ver resultados."
   },
   "empty": {

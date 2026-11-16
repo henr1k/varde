@@ -36,7 +36,7 @@
   "errorTooManyAttempts": "Çok fazla deneme yapıldı. Lütfen tekrar denemeden önce bekleyin.",
   "errorGeneral": "Kayıt başarısız oldu. Lütfen tekrar deneyin.",
   "signupDisabled": "Bu sunucuda kayıt etkin değil",
-  "imageAlt": "Endurain kayıt görseli",
+  "imageAlt": "Varde kayıt görseli",
   "unitCm": "cm",
   "unitFeet": "ft",
   "unitInches": "in",

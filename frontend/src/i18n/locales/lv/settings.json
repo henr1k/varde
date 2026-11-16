@@ -357,7 +357,7 @@
     },
     "email": {
       "title": "E-pasts",
-      "description": "Endurain paroles atiestatīšanas un reģistrācijas e-pastus sūta, izmantojot vidē konfigurēto SMTP serveri.",
+      "description": "Varde paroles atiestatīšanas un reģistrācijas e-pastus sūta, izmantojot vidē konfigurēto SMTP serveri.",
       "statusLoadError": "Neizdevās pārbaudīt e-pasta konfigurāciju.",
       "configured": "E-pasts ir konfigurēts.",
       "notConfigured": "E-pasts nav konfigurēts:",
@@ -741,7 +741,7 @@
       "retrievingGear": "Notiek jūsu Strava inventāra iegūšana fonā…",
       "retrieveGearError": "Neizdevās sākt Strava inventāra iegūšanu. Lūdzu, mēģiniet vēlreiz.",
       "unlinkTitle": "Atvienot Strava?",
-      "unlinkBody": "Endurain pārtrauks importēšanu no Strava. Jūsu esošās aktivitātes tiek saglabātas.",
+      "unlinkBody": "Varde pārtrauks importēšanu no Strava. Jūsu esošās aktivitātes tiek saglabātas.",
       "unlinkSuccess": "Strava atvienots",
       "unlinkError": "Neizdevās atvienot Strava. Lūdzu, mēģiniet vēlreiz."
     },
@@ -771,7 +771,7 @@
       "retrievingHealth": "Notiek jūsu Garmin Connect veselības datu iegūšana fonā…",
       "retrieveHealthError": "Neizdevās sākt Garmin Connect veselības datu iegūšanu. Lūdzu, mēģiniet vēlreiz.",
       "unlinkTitle": "Atvienot Garmin Connect?",
-      "unlinkBody": "Endurain pārtrauks importēšanu no Garmin Connect. Jūsu esošie dati tiek saglabāti.",
+      "unlinkBody": "Varde pārtrauks importēšanu no Garmin Connect. Jūsu esošie dati tiek saglabāti.",
       "unlinkSuccess": "Garmin Connect atvienots",
       "unlinkError": "Neizdevās atvienot Garmin Connect. Lūdzu, mēģiniet vēlreiz."
     }

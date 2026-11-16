@@ -1,5 +1,5 @@
 {
-  "logoAlt": "Endurain logotip",
+  "logoAlt": "Varde logotip",
   "notFound": {
     "title": "Stran ni najdena",
     "message": "Stran, ki jo iščeš, ne obstaja ali je bila premaknjena",
@@ -13,9 +13,9 @@
   },
   "configError": {
     "title": "Napaka konfiguracije",
-    "message": "Aplikacija ni mogla doseči zaledja Endurain. To je običajno posledica manjkajoče ali napačno nastavljene okoljske spremenljivke ENDURAIN_HOST ali pa zaledje ne deluje.",
+    "message": "Aplikacija ni mogla doseči zaledja Varde. To je običajno posledica manjkajoče ali napačno nastavljene okoljske spremenljivke ENDURAIN_HOST ali pa zaledje ne deluje.",
     "notSet": "(ni nastavljeno)",
-    "help": "Preverite, ali ENDURAIN_HOST kaže na URL, kjer je vaša instanca Endurain dosegljiva (na primer https://endurain.example.com), in ali zaledje deluje, nato pa znova naložite stran.",
+    "help": "Preverite, ali ENDURAIN_HOST kaže na URL, kjer je vaša instanca Varde dosegljiva (na primer https://endurain.example.com), in ali zaledje deluje, nato pa znova naložite stran.",
     "reload": "Znova naloži"
   },
   "dismiss": "Zapri",

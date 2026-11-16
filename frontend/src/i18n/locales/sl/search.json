@@ -1,6 +1,6 @@
 {
   "title": "Iskanje",
-  "subtitle": "Poišči uporabnike, aktivnosti in opremo v Endurainu.",
+  "subtitle": "Poišči uporabnike, aktivnosti in opremo v Vardeu.",
   "placeholder": "Išči…",
   "clear": "Počisti iskanje",
   "scopes": {
@@ -28,7 +28,7 @@
     "inactive": "Neaktivno"
   },
   "idle": {
-    "title": "Išči v Endurainu",
+    "title": "Išči v Vardeu",
     "description": "Izberi, kaj iščeš, nato začni tipkati, da vidiš zadetke."
   },
   "empty": {

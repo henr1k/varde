@@ -1,5 +1,5 @@
 {
-  "logoAlt": "Endurain 标志",
+  "logoAlt": "Varde 标志",
   "notFound": {
     "title": "页面未找到",
     "message": "您查找的页面不存在或已移动",
@@ -13,9 +13,9 @@
   },
   "configError": {
     "title": "配置错误",
-    "message": "应用无法连接到 Endurain 后端。这通常是由于缺少或错误配置了 ENDURAIN_HOST 环境变量，或者后端未运行。",
+    "message": "应用无法连接到 Varde 后端。这通常是由于缺少或错误配置了 ENDURAIN_HOST 环境变量，或者后端未运行。",
     "notSet": "（未设置）",
-    "help": "请检查 ENDURAIN_HOST 是否指向可访问您的 Endurain 实例的网址（例如 https://endurain.example.com），并确认后端正在运行，然后重新加载页面。",
+    "help": "请检查 ENDURAIN_HOST 是否指向可访问您的 Varde 实例的网址（例如 https://endurain.example.com），并确认后端正在运行，然后重新加载页面。",
     "reload": "重新加载"
   },
   "dismiss": "关闭",

@@ -357,7 +357,7 @@
     },
     "email": {
       "title": "E-mail",
-      "description": "Endurain sender e-mails til nulstilling af adgangskode og tilmelding via den SMTP-server, der er konfigureret i miljøet.",
+      "description": "Varde sender e-mails til nulstilling af adgangskode og tilmelding via den SMTP-server, der er konfigureret i miljøet.",
       "statusLoadError": "E-mailkonfigurationen kunne ikke kontrolleres.",
       "configured": "E-mail er konfigureret.",
       "notConfigured": "E-mail er ikke konfigureret:",
@@ -741,7 +741,7 @@
       "retrievingGear": "Henter dit Strava-udstyr i baggrunden…",
       "retrieveGearError": "Kunne ikke begynde at hente Strava-udstyr. Prøv venligst igen.",
       "unlinkTitle": "Afbryd forbindelse til Strava?",
-      "unlinkBody": "Endurain holder op med at importere fra Strava. Dine eksisterende aktiviteter beholdes.",
+      "unlinkBody": "Varde holder op med at importere fra Strava. Dine eksisterende aktiviteter beholdes.",
       "unlinkSuccess": "Strava-forbindelse afbrudt",
       "unlinkError": "Kunne ikke afbryde forbindelsen til Strava. Prøv venligst igen."
     },
@@ -771,7 +771,7 @@
       "retrievingHealth": "Henter dine Garmin Connect-helbredsdata i baggrunden…",
       "retrieveHealthError": "Kunne ikke begynde at hente Garmin Connect-helbredsdata. Prøv venligst igen.",
       "unlinkTitle": "Afbryd forbindelse til Garmin Connect?",
-      "unlinkBody": "Endurain holder op med at importere fra Garmin Connect. Dine eksisterende data beholdes.",
+      "unlinkBody": "Varde holder op med at importere fra Garmin Connect. Dine eksisterende data beholdes.",
       "unlinkSuccess": "Garmin Connect-forbindelse afbrudt",
       "unlinkError": "Kunne ikke afbryde forbindelsen til Garmin Connect. Prøv venligst igen."
     }

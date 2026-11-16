@@ -357,7 +357,7 @@
     },
     "email": {
       "title": "E-mail",
-      "description": "Endurain trimite e-mailurile de resetare a parolei și de înregistrare prin serverul SMTP configurat în mediu.",
+      "description": "Varde trimite e-mailurile de resetare a parolei și de înregistrare prin serverul SMTP configurat în mediu.",
       "statusLoadError": "Configurarea e-mailului nu a putut fi verificată.",
       "configured": "E-mailul este configurat.",
       "notConfigured": "E-mailul nu este configurat:",
@@ -741,7 +741,7 @@
       "retrievingGear": "Se preia echipamentul tău Strava în fundal…",
       "retrieveGearError": "Nu am putut începe preluarea echipamentului Strava. Te rugăm să încerci din nou.",
       "unlinkTitle": "Deconectezi Strava?",
-      "unlinkBody": "Endurain va înceta să importe din Strava. Activitățile tale existente sunt păstrate.",
+      "unlinkBody": "Varde va înceta să importe din Strava. Activitățile tale existente sunt păstrate.",
       "unlinkSuccess": "Strava deconectat",
       "unlinkError": "Nu am putut deconecta Strava. Te rugăm să încerci din nou."
     },
@@ -771,7 +771,7 @@
       "retrievingHealth": "Se preiau datele tale de sănătate Garmin Connect în fundal…",
       "retrieveHealthError": "Nu am putut începe preluarea datelor de sănătate Garmin Connect. Te rugăm să încerci din nou.",
       "unlinkTitle": "Deconectezi Garmin Connect?",
-      "unlinkBody": "Endurain va înceta să importe din Garmin Connect. Datele tale existente sunt păstrate.",
+      "unlinkBody": "Varde va înceta să importe din Garmin Connect. Datele tale existente sunt păstrate.",
       "unlinkSuccess": "Garmin Connect deconectat",
       "unlinkError": "Nu am putut deconecta Garmin Connect. Te rugăm să încerci din nou."
     }

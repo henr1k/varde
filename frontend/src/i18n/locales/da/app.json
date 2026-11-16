@@ -1,5 +1,5 @@
 {
-  "logoAlt": "Endurain-logo",
+  "logoAlt": "Varde-logo",
   "notFound": {
     "title": "Siden blev ikke fundet",
     "message": "Den side, du leder efter, findes ikke eller er blevet flyttet",
@@ -13,9 +13,9 @@
   },
   "configError": {
     "title": "Konfigurationsfejl",
-    "message": "Appen kunne ikke nå Endurain-backenden. Dette skyldes ofte en manglende eller forkert konfigureret ENDURAIN_HOST-miljøvariabel, eller at backenden ikke kører.",
+    "message": "Appen kunne ikke nå Varde-backenden. Dette skyldes ofte en manglende eller forkert konfigureret ENDURAIN_HOST-miljøvariabel, eller at backenden ikke kører.",
     "notSet": "(ikke angivet)",
-    "help": "Kontrollér, at ENDURAIN_HOST peger på den URL, hvor din Endurain-instans kan nås (for eksempel https://endurain.example.com), og at backenden kører, og genindlæs derefter siden.",
+    "help": "Kontrollér, at ENDURAIN_HOST peger på den URL, hvor din Varde-instans kan nås (for eksempel https://endurain.example.com), og at backenden kører, og genindlæs derefter siden.",
     "reload": "Genindlæs"
   },
   "dismiss": "Afvis",

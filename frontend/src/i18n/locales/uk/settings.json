@@ -357,7 +357,7 @@
     },
     "email": {
       "title": "Електронна пошта",
-      "description": "Endurain надсилає листи для скидання пароля та реєстрації через SMTP-сервер, налаштований у середовищі.",
+      "description": "Varde надсилає листи для скидання пароля та реєстрації через SMTP-сервер, налаштований у середовищі.",
       "statusLoadError": "Не вдалося перевірити налаштування електронної пошти.",
       "configured": "Електронну пошту налаштовано.",
       "notConfigured": "Електронну пошту не налаштовано:",
@@ -741,7 +741,7 @@
       "retrievingGear": "Отримання вашого спорядження Strava у фоновому режимі…",
       "retrieveGearError": "Не вдалося розпочати отримання спорядження Strava. Спробуйте ще раз.",
       "unlinkTitle": "Відключити Strava?",
-      "unlinkBody": "Endurain припинить імпорт зі Strava. Ваші наявні активності збережуться.",
+      "unlinkBody": "Varde припинить імпорт зі Strava. Ваші наявні активності збережуться.",
       "unlinkSuccess": "Strava відключено",
       "unlinkError": "Не вдалося відключити Strava. Спробуйте ще раз."
     },
@@ -771,7 +771,7 @@
       "retrievingHealth": "Отримання ваших даних про здоров'я Garmin Connect у фоновому режимі…",
       "retrieveHealthError": "Не вдалося розпочати отримання даних про здоров'я Garmin Connect. Спробуйте ще раз.",
       "unlinkTitle": "Відключити Garmin Connect?",
-      "unlinkBody": "Endurain припинить імпорт із Garmin Connect. Ваші наявні дані збережуться.",
+      "unlinkBody": "Varde припинить імпорт із Garmin Connect. Ваші наявні дані збережуться.",
       "unlinkSuccess": "Garmin Connect відключено",
       "unlinkError": "Не вдалося відключити Garmin Connect. Спробуйте ще раз."
     }

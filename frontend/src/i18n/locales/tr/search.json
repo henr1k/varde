@@ -1,6 +1,6 @@
 {
   "title": "Ara",
-  "subtitle": "Endurain genelinde kullanıcı, etkinlik ve ekipman bulun.",
+  "subtitle": "Varde genelinde kullanıcı, etkinlik ve ekipman bulun.",
   "placeholder": "Ara…",
   "clear": "Aramayı temizle",
   "scopes": {
@@ -28,7 +28,7 @@
     "inactive": "Pasif"
   },
   "idle": {
-    "title": "Endurain'de ara",
+    "title": "Varde'de ara",
     "description": "Ne arayacağınızı seçin, ardından eşleşmeleri görmek için yazmaya başlayın."
   },
   "empty": {

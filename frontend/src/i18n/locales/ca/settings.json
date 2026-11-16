@@ -357,7 +357,7 @@
     },
     "email": {
       "title": "Correu electrònic",
-      "description": "Endurain envia els correus de restabliment de contrasenya i de registre mitjançant el servidor SMTP configurat a l'entorn.",
+      "description": "Varde envia els correus de restabliment de contrasenya i de registre mitjançant el servidor SMTP configurat a l'entorn.",
       "statusLoadError": "No s'ha pogut comprovar la configuració del correu electrònic.",
       "configured": "El correu electrònic està configurat.",
       "notConfigured": "El correu electrònic no està configurat:",
@@ -741,7 +741,7 @@
       "retrievingGear": "Recuperant el teu equipament de Strava en segon pla…",
       "retrieveGearError": "No s'ha pogut iniciar la recuperació d'equipament de Strava. Torna-ho a intentar.",
       "unlinkTitle": "Desconnectar Strava?",
-      "unlinkBody": "Endurain deixarà d'importar des de Strava. Les teves activitats existents es conserven.",
+      "unlinkBody": "Varde deixarà d'importar des de Strava. Les teves activitats existents es conserven.",
       "unlinkSuccess": "Strava desconnectat",
       "unlinkError": "No s'ha pogut desconnectar Strava. Torna-ho a intentar."
     },
@@ -771,7 +771,7 @@
       "retrievingHealth": "Recuperant les teves dades de salut de Garmin Connect en segon pla…",
       "retrieveHealthError": "No s'ha pogut iniciar la recuperació de dades de salut de Garmin Connect. Torna-ho a intentar.",
       "unlinkTitle": "Desconnectar Garmin Connect?",
-      "unlinkBody": "Endurain deixarà d'importar des de Garmin Connect. Les teves dades existents es conserven.",
+      "unlinkBody": "Varde deixarà d'importar des de Garmin Connect. Les teves dades existents es conserven.",
       "unlinkSuccess": "Garmin Connect desconnectat",
       "unlinkError": "No s'ha pogut desconnectar Garmin Connect. Torna-ho a intentar."
     }

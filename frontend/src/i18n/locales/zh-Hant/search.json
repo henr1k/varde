@@ -1,6 +1,6 @@
 {
   "title": "搜尋",
-  "subtitle": "在 Endurain 中尋找使用者、活動和裝備。",
+  "subtitle": "在 Varde 中尋找使用者、活動和裝備。",
   "placeholder": "搜尋…",
   "clear": "清除搜尋",
   "scopes": {
@@ -28,7 +28,7 @@
     "inactive": "未啟用"
   },
   "idle": {
-    "title": "搜尋 Endurain",
+    "title": "搜尋 Varde",
     "description": "選擇要搜尋的內容，然後開始輸入以查看符合的結果。"
   },
   "empty": {

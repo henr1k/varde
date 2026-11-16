@@ -1,19 +1,19 @@
 services:
-  endurain:
-    container_name: endurain-app
-    image: ghcr.io/endurain-project/endurain:latest
+  varde:
+    container_name: varde-app
+    image: ghcr.io/henr1k/varde:latest
     env_file:
       - .env
     volumes:
       # The container runs as a non-root user (default UID 1000).
       # Ensure the bind mount directories exist on the host (see getting-started docs).
       # For Linux, run this once before first start:
-      #   sudo chown -R 1000:1000 /var/opt/endurain/backend
-      # If you set LOCAL_PATH in .env, replace /var/opt/endurain with that path.
+      #   sudo chown -R 1000:1000 /var/opt/varde/backend
+      # If you set LOCAL_PATH in .env, replace /var/opt/varde with that path.
       # To run with a custom UID, add `user: "<UID>:<GID>"` and chown to match.
-    #  - ${LOCAL_PATH:-/var/opt/endurain}/backend/app:/app/backend:Z # Configure volume if you want to edit the code locally by cloning the repo
-      - ${LOCAL_PATH:-/var/opt/endurain}/backend/data:/app/backend/data:Z # necessary for activity files, user images and server images persistence on container image updates
-      - ${LOCAL_PATH:-/var/opt/endurain}/backend/logs:/app/backend/logs:Z # log files for the backend
+    #  - ${LOCAL_PATH:-/var/opt/varde}/backend/app:/app/backend:Z # Configure volume if you want to edit the code locally by cloning the repo
+      - ${LOCAL_PATH:-/var/opt/varde}/backend/data:/app/backend/data:Z # necessary for activity files, user images and server images persistence on container image updates
+      - ${LOCAL_PATH:-/var/opt/varde}/backend/logs:/app/backend/logs:Z # log files for the backend
     ports:
       - "8080:8080"
     depends_on:
@@ -24,7 +24,7 @@ services:
    # postgres logic
   postgres:
     image: docker.io/postgres:18@sha256:74935e72241653ca55e0414067e6d8763aceb8a810eb51b452253ec3dcfc4336
-    container_name: endurain-postgres
+    container_name: varde-postgres
     env_file:
       - .env
     healthcheck:
@@ -33,5 +33,5 @@ services:
       timeout: 5s
       retries: 5
     volumes:
-      - ${LOCAL_PATH:-/var/opt/endurain}/postgres:/var/lib/postgresql/data:Z
+      - ${LOCAL_PATH:-/var/opt/varde}/postgres:/var/lib/postgresql/data:Z
     restart: unless-stopped

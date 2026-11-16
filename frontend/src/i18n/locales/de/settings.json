@@ -357,7 +357,7 @@
     },
     "email": {
       "title": "E-Mail",
-      "description": "Endurain versendet E-Mails zum Zurücksetzen des Passworts und zur Registrierung über den in der Umgebung konfigurierten SMTP-Server.",
+      "description": "Varde versendet E-Mails zum Zurücksetzen des Passworts und zur Registrierung über den in der Umgebung konfigurierten SMTP-Server.",
       "statusLoadError": "Die E-Mail-Konfiguration konnte nicht geprüft werden.",
       "configured": "E-Mail ist konfiguriert.",
       "notConfigured": "E-Mail ist nicht konfiguriert:",
@@ -741,7 +741,7 @@
       "retrievingGear": "Deine Strava-Ausrüstung wird im Hintergrund abgerufen…",
       "retrieveGearError": "Das Abrufen der Strava-Ausrüstung konnte nicht gestartet werden. Bitte versuche es erneut.",
       "unlinkTitle": "Strava trennen?",
-      "unlinkBody": "Endurain stoppt den Import von Strava. Deine bestehenden Aktivitäten bleiben erhalten.",
+      "unlinkBody": "Varde stoppt den Import von Strava. Deine bestehenden Aktivitäten bleiben erhalten.",
       "unlinkSuccess": "Strava getrennt",
       "unlinkError": "Strava konnte nicht getrennt werden. Bitte versuche es erneut."
     },
@@ -771,7 +771,7 @@
       "retrievingHealth": "Deine Garmin Connect-Gesundheitsdaten werden im Hintergrund abgerufen…",
       "retrieveHealthError": "Das Abrufen der Garmin Connect-Gesundheitsdaten konnte nicht gestartet werden. Bitte versuche es erneut.",
       "unlinkTitle": "Garmin Connect trennen?",
-      "unlinkBody": "Endurain stoppt den Import von Garmin Connect. Deine bestehenden Daten bleiben erhalten.",
+      "unlinkBody": "Varde stoppt den Import von Garmin Connect. Deine bestehenden Daten bleiben erhalten.",
       "unlinkSuccess": "Garmin Connect getrennt",
       "unlinkError": "Garmin Connect konnte nicht getrennt werden. Bitte versuche es erneut."
     }

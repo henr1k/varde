@@ -1,5 +1,5 @@
 {
-  "logoAlt": "Endurain logotipas",
+  "logoAlt": "Varde logotipas",
   "notFound": {
     "title": "Puslapis nerastas",
     "message": "Ieškomo puslapio nėra arba jis buvo perkeltas",
@@ -13,9 +13,9 @@
   },
   "configError": {
     "title": "Konfigūracijos klaida",
-    "message": "Programai nepavyko pasiekti Endurain serverio. Tai paprastai įvyksta dėl trūkstamo ar netinkamai sukonfigūruoto ENDURAIN_HOST aplinkos kintamojo arba dėl neveikiančio serverio.",
+    "message": "Programai nepavyko pasiekti Varde serverio. Tai paprastai įvyksta dėl trūkstamo ar netinkamai sukonfigūruoto ENDURAIN_HOST aplinkos kintamojo arba dėl neveikiančio serverio.",
     "notSet": "(nenustatyta)",
-    "help": "Patikrinkite, ar ENDURAIN_HOST nurodo URL, kuriuo pasiekiama jūsų Endurain instancija (pavyzdžiui https://endurain.example.com) ir ar serveris veikia, tada iš naujo įkelkite puslapį.",
+    "help": "Patikrinkite, ar ENDURAIN_HOST nurodo URL, kuriuo pasiekiama jūsų Varde instancija (pavyzdžiui https://endurain.example.com) ir ar serveris veikia, tada iš naujo įkelkite puslapį.",
     "reload": "Įkelti iš naujo"
   },
   "dismiss": "Atmesti",
